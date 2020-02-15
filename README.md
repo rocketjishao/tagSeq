@@ -1,7 +1,6 @@
 # NAD-tagSeq
 
-1. Mix the fastq files into one file:
-Combine fastq files (pass & fail) to one fastq file.
+1. Combine fastq files (pass & fail) to one fastq file. \n
 In Windows OS CMD: (after changed to the file folder path) (file_folder_path>)copy (file_front)_*.fastq (mixed_file_name).fastq
 In Linux OS: cat (file_identical).fastq > file_name.fastq
 
