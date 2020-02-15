@@ -1,12 +1,14 @@
 # NAD-tagSeq
-1.
+
+1. Mix the fastq files into one file:
 Combine fastq files (pass & fail) to one fastq file.
 In Windows OS CMD: (after changed to the file folder path) (file_folder_path>)copy (file_front)_*.fastq (mixed_file_name).fastq
 In Linux OS: cat (file_identical).fastq > file_name.fastq
 
-2. 
-Use main.py to find out the RNA with tag in the first 40 nt
+2. Find out the RNA with tag in the first 40 nt:
+Download main.py from my Git-Hub repository. 
 Result file: tagged.fa (as an example)
+
 
 3.
 Download minimap2 in Linux OS. (https://github.com/lh3/minimap2)
