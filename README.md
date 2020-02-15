@@ -1,6 +1,6 @@
 # NAD-tagSeq
 
-1. Combine fastq files (pass & fail) to one fastq file. \n
+1. Combine fastq files (pass & fail) to one fastq file.
   In Windows OS CMD: (after changed to the file folder path) (file_folder_path>)copy (file_front)_*.fastq (mixed_file_name).fastq
   In Linux OS: cat (file_identical).fastq > (mixed_file_name).fastq
 
@@ -32,4 +32,8 @@ In Linux OS:
 5. IGV to visualize the result
 In Windows OS:
   Download IGV: (https://software.broadinstitute.org/software/igv/download)
-  Download genome file from IGV for A. thaliana, human, mouse, or E.coli:
+  Download genome file from IGV for A. thaliana, human, mouse, or E.coli: Genome > Load Genome from Server > Select the genome file
+  Import the bam and bam.bai to Windows OS, then: File > Load from File > Select the output.bam file
+  
+6. Use htseq-count to do statistical analysis of each gene in ADPRC- and ADPRC+ groups:
+
