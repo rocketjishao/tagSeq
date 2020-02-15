@@ -35,5 +35,5 @@ In Windows OS:
   Download genome file from IGV for A. thaliana, human, mouse, or E.coli: Genome > Load Genome from Server > Select the genome file
   Import the bam and bam.bai to Windows OS, then: File > Load from File > Select the output.bam file
   
-6. Use htseq-count to do statistical analysis of each tagged and untagged RNA in ADPRC- and ADPRC+ groups:
+6. Use htseq-count to do statistical analysis of each RNA of tagged and untagged counterparts in ADPRC- and ADPRC+ groups:
 
