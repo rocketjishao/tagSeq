@@ -11,7 +11,7 @@ In Linux OS:
       $ sudo apt-get update
       $ sudo apt-get install python
   Change directory to the file pathway for main.py; 
-  Sort out the RNAs with tag RNA sequence, meanwhile cut off the first 40 nt by typing in:
+  Sort out the RNAs with and without tag sequence, meanwhile cut off the first 40 nt by typing in:
       $ python main.py input_file.fastq output_file.fastq
         (Result file: tagged.fastq (as an example))
         
