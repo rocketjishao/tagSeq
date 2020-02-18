@@ -1,3 +1,5 @@
+#Simplified procedure for NAD-tagSeq data analysis
+
 1. Combine fastq files (pass & fail) to one fastq file.
 In Windows OS CMD:  
     copy (file_name)_*.fastq mixed.fastq
