@@ -11,7 +11,7 @@ In Linux OS:
     Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
     Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
         $ sudo apt-get install python
-        $ python get-pip.py # pip install, optional
+        #$ python get-pip.py # pip install, optional
     Change directory to the file pathway for main.py; 
     Sort out the RNAs with and without tag RNA sequence, meanwhile cut off the first 40 nt of the tagged RNA by typing in:
         $ python main.py input_file.fastq tagged.fastq untagged.fastq
@@ -28,8 +28,8 @@ In Linux OS:
 In Linux OS:
     Intall samtools. (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
     Run Samtools by typing in (one by one):
-        samtools view -hb output.sam > output.bam 
-        samtools sort -O BAM -T output.bam.temp -o output_sort.bam  output.bam
+        samtools view -bS output.sam > output.bam 
+        samtools sort -O BAM -o output_sort.bam  output.bam
         samtools index output_sort.bam output_sort.bam.bai
         # result files: output.bam, output_sort.bam, output_sort.bam.bai
 
