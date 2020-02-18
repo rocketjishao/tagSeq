@@ -13,7 +13,7 @@ In Linux OS:
         $ sudo apt-get install python
         #$ python get-pip.py # pip install, optional
     Change directory to the file pathway for main.py; 
-    Sort out the RNAs with and without tag RNA sequence, meanwhile cut off the first 40 nt of the tagged RNA by typing in:
+    Sort out the RNAs with and without tag RNA sequence by typing in:
         $ python main.py input_file.fastq tagged.fastq untagged.fastq
           # result file: tagged.fastq (as an example) and untagged.fastq
         
