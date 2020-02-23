@@ -11,18 +11,18 @@ In Linux OS:
     Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
     Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
         $ sudo apt-get install python
-        #$ python get-pip.py # pip install, optional
+        $ python get-pip.py # pip install, optional
     Change directory to the file pathway for main.py; 
     Sort out the RNAs with and without tag RNA sequence by typing in:
         $ python main.py input_file.fastq tagged.fastq untagged.fastq
-          # result file: tagged.fastq (as an example) and untagged.fastq
+          # result files: tagged.fastq (as an example) and untagged.fastq
         
 3. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:
 In Linux OS:
     Install minimap2. (https://github.com/lh3/minimap2)
     Run Minimap2 by typing in:
         ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
-          # result file: output.sam
+          # reference file like TAIR10_chr_all.fa, result file is output.sam
 
 4. Samtools to change the sam file to bam file and obtain its bam.bai file.
 In Linux OS:
@@ -39,10 +39,10 @@ In Windows OS:
     Download genome file from IGV for A. thaliana, human, mouse, or E.coli: Genome > Load Genome from Server > Select the genome file
     Import the bam and bam.bai to Windows OS, then: File > Load from File > Select the output.bam file
   
-6. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or to the tagged RNA in ADPRC- and ADPRC+ samples.
+6. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.
 In Linux OS:
     And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC
     Install featureCounts (http://subread.sourceforge.net/): sudo apt-get install subread 
     Run the command below:
-        featureCounts -L -a gencode.vM23.annotation.gtf -o both tagged.sam untagged.sam
-        # result files: both and both.summary
+        featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
+        # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
