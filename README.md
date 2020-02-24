@@ -74,10 +74,19 @@ Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linu
         Install on Ubuntu18.04:  
     Download the installer:
         Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)
-    Verify your installer hashes.(In a terminal window enter:sha256sum Downloads/Miniconda_file.sh)
+    Verify your installer hashes, in a terminal window enter:
+        $sha256sum Downloads/Miniconda_file.sh)
     In your terminal window, run Miniconda:
-        bash Miniconda3-latest-Linux-x86_64.sh
+        $bash Miniconda3-latest-Linux-x86_64.sh
     Follow the prompts on the installer screens.
     If you are unsure about any setting, accept the defaults. You can change them later.
     To make the changes take effect, close and then re-open your terminal window.
     Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.
+
+pycoQC: (https://a-slide.github.io/pycoQC/installation/)
+1. Create a clean virtual environment:
+    $ conda create -n pycoQC python=3.6
+2. Install pycoQC with miniconda3:
+    $ conda install -c aleg pycoqc
+3. Run pycoQC by the command:
+    $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
