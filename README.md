@@ -1,4 +1,4 @@
-Softwares and code
+#Softwares and code
 	MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
 	Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
 	Python 2.7 and 3.7 (http://www.python.org/downloads/)
@@ -69,7 +69,7 @@ In Linux OS:
 
 
 
-Software installation:
+#Software installation:
 Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
         Install on Ubuntu18.04:  
     Download the installer:
