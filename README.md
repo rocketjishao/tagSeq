@@ -1,11 +1,8 @@
-
-
-
-Software
+Softwares and code
 	MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
 	Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
 	Python 2.7 and 3.7 (http://www.python.org/downloads/)
-	Anacode3 (https://docs.anaconda.com/anaconda/install/linux/)
+	Minicode3 (https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
 	PycoQC (https://github.com/a-slide/pycoQC)
 	Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)
 	Minimap2 (https://github.com/lh3/minimap2)
@@ -17,7 +14,7 @@ Software
 
 #Simplified procedure for NAD-tagSeq data analysis
 
-1. Run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:
+1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:
 Type in the command below. Open the html file to visualize the results. 
     pycoQC –f sequencing_summary.txt –o pycoQC.html
 
