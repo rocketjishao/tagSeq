@@ -2,7 +2,9 @@ Softwares and code
 	MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
 	Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
 	Python 2.7 and 3.7 (http://www.python.org/downloads/)
-	Minicode3 (https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+	Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+        Install on Ubuntu18.04:
+            
 	PycoQC (https://github.com/a-slide/pycoQC)
 	Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)
 	Minimap2 (https://github.com/lh3/minimap2)
@@ -64,3 +66,18 @@ In Linux OS:
     Run the command below:
         featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
         # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
+
+
+
+Software installation:
+Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+        Install on Ubuntu18.04:  
+    Download the installer:
+        Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+    Verify your installer hashes.(In a terminal window enter:sha256sum Downloads/Miniconda_file.sh)
+    In your terminal window, run Miniconda:
+        bash Miniconda3-latest-Linux-x86_64.sh
+    Follow the prompts on the installer screens.
+    If you are unsure about any setting, accept the defaults. You can change them later.
+    To make the changes take effect, close and then re-open your terminal window.
+    Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.
