@@ -109,7 +109,7 @@ Type in the command below. Open the html file with web browser to visualize the 
         $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
           # reference file like TAIR10_chr_all.fa, result file is output.sam
 
-5. Samtools to change the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
+5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
     Run Samtools by typing in (one by one):
     
         $ samtools view -bS output.sam > output.bam 
