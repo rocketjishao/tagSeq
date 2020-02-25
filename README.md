@@ -2,7 +2,7 @@
 
 - [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
-- [Software installation and initiation:](#software-installation-and-initiation-)
+- [Software installation and initiation](#software-installation-and-initiation)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
 
 
@@ -32,7 +32,7 @@
 (9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)  
 (10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)  
 
-# Software installation and initiation:
+# Software installation and initiation
 (1) python2.7 and python3.6 (Installed on Ubuntu:)
     
         $ sudo apt-get install python2.
