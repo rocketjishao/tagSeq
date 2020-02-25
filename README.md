@@ -23,7 +23,7 @@
           # Then type in password
         $ sudo apt-get install python3
 
-(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
+(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
     Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
@@ -57,13 +57,15 @@ c. Run pycoQC by the command:
       $ git clone https://github.com/lh3/minimap2
       $ cd minimap2 
       $ make file
-(5) Samtools
-
+(5) Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
+      
       $ sudo apt-get install -y samtools
         # then type in password
-(5) Install featureCounts (http://subread.sourceforge.net/):  
+(6) Install featureCounts (http://subread.sourceforge.net/):  
     
       $ sudo apt-get install subread 
+        # then type in password
+
 
 # Simplified procedure for NAD-tagSeq data analysis
 
@@ -101,7 +103,6 @@ Type in the command below. Open the html file with web browser to visualize the 
           # reference file like TAIR10_chr_all.fa, result file is output.sam
 
 5. Samtools to change the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
-    Intall samtools. (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
     Run Samtools by typing in (one by one):
     
         $ samtools view -bS output.sam > output.bam 
