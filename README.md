@@ -11,7 +11,7 @@
 (9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)  
 (10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)  
 
-# Software installation and usage:
+# Software installation and initiation:
 (1) python2.7 and python3.6 (Installed on Ubuntu:)
     
         $ sudo apt-get install python2.
@@ -55,16 +55,16 @@ c. Run pycoQC by the command:
 
 (4) Minimap2 installation:    
     
-    $ git clone https://github.com/lh3/minimap2
-    $ cd minimap2 
-    $ make file
+      $ git clone https://github.com/lh3/minimap2
+      $ cd minimap2 
+      $ make file
 
 # Simplified procedure for NAD-tagSeq data analysis
 
 1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
-Type in the command below. Open the html file to visualize the results.   
+Type in the command below. Open the html file with web browser to visualize the results.   
     
-        $ pycoQC –f sequencing_summary.txt –o pycoQC.html
+      $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
 2. Combine fastq files (pass & fail) to one fastq file.  
     In Windows OS CMD:  
