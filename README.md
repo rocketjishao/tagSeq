@@ -15,12 +15,12 @@
 (1) python2.7 and python3.6 (Installed on Ubuntu:)
     
         $ sudo apt-get install python2.
-        # Then type in password
+          # Then type in password
         $ sudo apt-get install python-pip 
-        # or try $ python get-pip.py
+          # or try $ python get-pip.py
 
         $ sudo add-apt-repository ppa:jonathonf/python-3.6
-        # Then type in password
+          # Then type in password
         $ sudo apt-get install python3
 
 (2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
@@ -64,7 +64,7 @@ c. Run pycoQC by the command:
 1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
 Type in the command below. Open the html file with web browser to visualize the results.   
     
-      $ pycoQC –f sequencing_summary.txt –o pycoQC.html
+        $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
 2. Combine fastq files (pass & fail) to one fastq file.  
     In Windows OS CMD:  
@@ -85,7 +85,7 @@ Type in the command below. Open the html file with web browser to visualize the 
    Sort out the RNAs with and without tag RNA sequence by typing in:
         
         $ python main.py input_file.fastq tagged.fastq untagged.fastq
-        # result files: tagged.fastq (as an example) and untagged.fastq
+          # result files: tagged.fastq (as an example) and untagged.fastq
         
 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
     Install minimap2. (https://github.com/lh3/minimap2)
@@ -101,7 +101,7 @@ Type in the command below. Open the html file with web browser to visualize the 
         $ samtools view -bS output.sam > output.bam 
         $ samtools sort -O BAM -o output_sort.bam  output.bam
         $ samtools index output_sort.bam output_sort.bam.bai
-        # result files: output.bam, output_sort.bam, output_sort.bam.bai
+          # result files: output.bam, output_sort.bam, output_sort.bam.bai
 
 6. IGV to visualize the result
 In Windows OS:
@@ -117,4 +117,4 @@ In Windows OS:
    Run the command below:  
         
         $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-                # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
+          # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
