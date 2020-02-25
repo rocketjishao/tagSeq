@@ -23,24 +23,24 @@ Type in the command below. Open the html file to visualize the results.
 2. Combine fastq files (pass & fail) to one fastq file.
 In Windows OS CMD:  
     
-    $copy (file_name)_*.fastq mixed.fastq
+    $ copy (file_name)_*.fastq mixed.fastq
 In Linux OS: 
     
-    $cat (file_name)_*.fastq > mixed.fastq
+    $ cat (file_name)_*.fastq > mixed.fastq
 
 3. Sort out the RNA with and without tag in the first 40 nt:
 In Linux OS:
     Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
     Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
         
-        $ sudo apt-get install python
-        $ python get-pip.py # pip install, optional
+    $ sudo apt-get install python
+    $ python get-pip.py # pip install, optional
     
    Change directory to the file pathway for main.py; 
-    Sort out the RNAs with and without tag RNA sequence by typing in:
+   Sort out the RNAs with and without tag RNA sequence by typing in:
         
-        $ python main.py input_file.fastq tagged.fastq untagged.fastq
-          # result files: tagged.fastq (as an example) and untagged.fastq
+    $ python main.py input_file.fastq tagged.fastq untagged.fastq
+        # result files: tagged.fastq (as an example) and untagged.fastq
         
 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:
 In Linux OS:
@@ -73,7 +73,7 @@ In Linux OS:
     Run the command below:
         
         $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-        # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
+            # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
 
 
 
@@ -89,8 +89,7 @@ In Linux OS:
     # Then type in password
     $ sudo apt-get install python3
 
-(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
-        Installed on Ubuntu18.04:  
+(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
     Download the installer:
         Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)
     Verify your installer hashes, in a terminal window enter:
@@ -100,22 +99,22 @@ In Linux OS:
         
         $bash Miniconda3-latest-Linux-x86_64.sh
    Follow the prompts on the installer screens.
-    If you are unsure about any setting, accept the defaults. You can change them later.
-    To make the changes take effect, close and then re-open your terminal window.
-    Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.
+   If you are unsure about any setting, accept the defaults. You can change them later.
+   To make the changes take effect, close and then re-open your terminal window.
+   Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)
-1. Create a clean virtual environment:
-    
-    $conda create -n pycoQC python=3.6
+a.Create a clean virtual environment:  
 
-2. Install pycoQC with miniconda3:
-    
-    $ conda install -c aleg pycoqc
+       $conda create -n pycoQC python=3.6
 
-3. Run pycoQC by the command:
-    
-    $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+b. Install pycoQC with miniconda3:  
+
+        $ conda install -c aleg pycoqc
+
+c. Run pycoQC by the command:  
+
+        $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
 
 (4) Minimap2:
 Install:
