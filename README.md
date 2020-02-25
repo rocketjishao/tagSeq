@@ -1,4 +1,4 @@
-#Softwares and code
+# Softwares and code
 (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
 (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
 * The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:
@@ -13,7 +13,7 @@
 
 
 
-#Simplified procedure for NAD-tagSeq data analysis
+# Simplified procedure for NAD-tagSeq data analysis
 
 1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:
 Type in the command below. Open the html file to visualize the results. 
@@ -74,7 +74,7 @@ In Linux OS:
 
 
 
-#Software installation and usage:
+# Software installation and usage:
 (1) python2.7 and python3.6 (Installed on Ubuntu:)
     
     $ sudo apt-get install python2.
