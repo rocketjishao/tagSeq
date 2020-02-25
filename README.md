@@ -72,8 +72,8 @@ c. Run pycoQC by the command:
     | --- | --- |
     |  pycoQC | sequencing_summary.txt | pycoQC.html|
     | Windows OS CMS | f_*.fastq | mixed.fastq|
-    | main.py | mixed.fastq | tagged.fastq , untagged.fastq |
-    | minimap2 | tagged.fastq reference_file (TAIR10_chr_all.fa) | output.sam |
+    | main.py | mixed.fastq | tagged.fastquntagged.fastq |
+    | minimap2 | tagged.fastq reference_file(TAIR10_chr_all.fa) | output.sam |
     | samtools | output.sam | output.bam output_sort.bam output_sort.bam.bai |
     | IGV | A. thaliana genome files outpu_sort.bam output_sort.bam.bai | 
     | featureCounts | annotation file (TAIR10_GFF3_genes.gff) tagged.sam, untagged.sam | both and both.summary |
