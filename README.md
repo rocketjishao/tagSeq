@@ -3,7 +3,7 @@
 - [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
 - [Software installation and initiation:](#software-installation-and-initiation-)
-- [Simplified procedure for NAD-tagSeq data analysis](#simplified-procedure-for-nad-tagseq-data-analysis)
+- [NAD-tagSeq data analysis procedure](#nad-tagseq data analysis procedure)
 
 
 # Demo files			
@@ -87,7 +87,7 @@ c. Run pycoQC by the command:
       $ sudo apt-get install subread 
         # then type in password 
 
-# Simplified procedure for NAD-tagSeq data analysis
+# NAD-tagSeq data analysis procedure
 
 1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
 Type in the command below. Open the html file with web browser to visualize the results.   
