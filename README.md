@@ -58,6 +58,9 @@ c. Run pycoQC by the command:
       $ git clone https://github.com/lh3/minimap2
       $ cd minimap2 
       $ make file
+(5) Install featureCounts (http://subread.sourceforge.net/):  
+    
+        $ sudo apt-get install subread 
 
 # Simplified procedure for NAD-tagSeq data analysis
 
@@ -110,10 +113,7 @@ In Windows OS:
     Import the bam and bam.bai to Windows OS, then: File > Load from File > Select the output.bam file
   
 7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples. (In Linux OS:)  
-    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
-    Install featureCounts (http://subread.sourceforge.net/):   
-    
-        $ sudo apt-get install subread 
+   And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
         
         $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
