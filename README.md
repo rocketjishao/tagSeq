@@ -70,7 +70,7 @@ c. Run pycoQC by the command:
 
     | sofware | input_files | output_files |
     | --- | --- | --- |
-    | pycoQC| sequencing_summary.txt | pycoQC.html|
+    | pycoQC | sequencing_summary.txt | pycoQC.html |
     
     
     | Windows OS CMS | f_*.fastq | mixed.fastq|
