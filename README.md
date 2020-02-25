@@ -1,16 +1,15 @@
 #Softwares and code
-	MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
-	Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
-	Python 2.7 and 3.7 (http://www.python.org/downloads/)
-	Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
-        Install on Ubuntu18.04:
-            
-	PycoQC (https://github.com/a-slide/pycoQC)
-	Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)
-	Minimap2 (https://github.com/lh3/minimap2)
-	Samtools (http://samtools.sourceforge.net/)
-	Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)
-	featureCounts (http://bioinf.wehi.edu.au/featureCounts/)
+(1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
+(2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
+* The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:
+(3) Python 2.7 and 3.7 (http://www.python.org/downloads/)
+(4) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)            
+(5) PycoQC (https://github.com/a-slide/pycoQC)
+(6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)
+(7) Minimap2 (https://github.com/lh3/minimap2)
+(8) Samtools (http://samtools.sourceforge.net/)
+(9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)
+(10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)
 
 
 
@@ -69,9 +68,19 @@ In Linux OS:
 
 
 
-#Software installation:
-Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
-        Install on Ubuntu18.04:  
+#Software installation and usage:
+(1) python2.7 and python3.6 (Installed on Ubuntu:)
+    $ sudo apt-get install python2.
+    # Then type in password
+    $ sudo apt-get install python-pip 
+    # or try $ python get-pip.py
+
+    $ sudo add-apt-repository ppa:jonathonf/python-3.6
+    # Then type in password
+    $ sudo apt-get install python3
+
+(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+        Installed on Ubuntu18.04:  
     Download the installer:
         Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)
     Verify your installer hashes, in a terminal window enter:
@@ -83,10 +92,17 @@ Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linu
     To make the changes take effect, close and then re-open your terminal window.
     Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.
 
-pycoQC: (https://a-slide.github.io/pycoQC/installation/)
+(3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)
 1. Create a clean virtual environment:
     $ conda create -n pycoQC python=3.6
 2. Install pycoQC with miniconda3:
     $ conda install -c aleg pycoqc
 3. Run pycoQC by the command:
     $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+
+(4) Minimap2:
+Install:
+    $ git clone https://github.com/lh3/minimap2
+    $ cd minimap2 && make
+Use:
+    $ ./minimap2 -ax splice -uf -k14 ref.fa reads.fa > aln.sam  # noisy Nanopore Direct RNA-seq
