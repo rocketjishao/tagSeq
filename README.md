@@ -1,7 +1,7 @@
 # Softwares and code
-(1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
-(2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
-* The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:
+ (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
+ (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
+*% The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:
 (3) Python 2.7 and 3.7 (http://www.python.org/downloads/)
 (4) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)            
 (5) PycoQC (https://github.com/a-slide/pycoQC)
