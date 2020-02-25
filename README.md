@@ -69,7 +69,7 @@ c. Run pycoQC by the command:
 # Demo files			
 
     | sofware | input files| output file|
-    | --- | --- |
+    | --- | --- | --- |
     |  pycoQC | sequencing_summary.txt | pycoQC.html|
     | Windows OS CMS | f_*.fastq | mixed.fastq|
     | main.py | mixed.fastq | tagged.fastquntagged.fastq |
