@@ -11,7 +11,51 @@
 (9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)  
 (10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)  
 
+# Software installation and usage:
+(1) python2.7 and python3.6 (Installed on Ubuntu:)
+    
+        $ sudo apt-get install python2.
+        # Then type in password
+        $ sudo apt-get install python-pip 
+        # or try $ python get-pip.py
 
+        $ sudo add-apt-repository ppa:jonathonf/python-3.6
+        # Then type in password
+        $ sudo apt-get install python3
+
+(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
+    Download the installer:  
+        Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
+    Verify your installer hashes, in a terminal window enter:  
+        
+        $ sha256sum Downloads/Miniconda_file.sh
+   In your terminal window, run Miniconda:  
+        
+        $bash Miniconda3-latest-Linux-x86_64.sh
+   Follow the prompts on the installer screens.  
+   If you are unsure about any setting, accept the defaults. You can change them later.  
+   To make the changes take effect, close and then re-open your terminal window.  
+   Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.  
+
+(3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
+a.Create a clean virtual environment:  
+
+       $conda create -n pycoQC python=3.6
+
+b. Install pycoQC with miniconda3:  
+
+        $ conda install -c aleg pycoqc
+
+c. Run pycoQC by the command:  
+
+        $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+
+(4) Minimap2:  
+Install:  
+    
+    $ git clone https://github.com/lh3/minimap2
+    $ cd minimap2 
+    $ make file
 
 # Simplified procedure for NAD-tagSeq data analysis
 
@@ -77,48 +121,4 @@ In Linux OS:
 
 
 
-# Software installation and usage:
-(1) python2.7 and python3.6 (Installed on Ubuntu:)
-    
-        $ sudo apt-get install python2.
-        # Then type in password
-        $ sudo apt-get install python-pip 
-        # or try $ python get-pip.py
 
-        $ sudo add-apt-repository ppa:jonathonf/python-3.6
-        # Then type in password
-        $ sudo apt-get install python3
-
-(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
-    Download the installer:  
-        Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
-    Verify your installer hashes, in a terminal window enter:  
-        
-        $ sha256sum Downloads/Miniconda_file.sh
-   In your terminal window, run Miniconda:  
-        
-        $bash Miniconda3-latest-Linux-x86_64.sh
-   Follow the prompts on the installer screens.  
-   If you are unsure about any setting, accept the defaults. You can change them later.  
-   To make the changes take effect, close and then re-open your terminal window.  
-   Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.  
-
-(3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
-a.Create a clean virtual environment:  
-
-       $conda create -n pycoQC python=3.6
-
-b. Install pycoQC with miniconda3:  
-
-        $ conda install -c aleg pycoqc
-
-c. Run pycoQC by the command:  
-
-        $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
-
-(4) Minimap2:  
-Install:  
-    
-    $ git clone https://github.com/lh3/minimap2
-    $ cd minimap2 
-    $ make file
