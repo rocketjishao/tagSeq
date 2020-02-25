@@ -31,27 +31,29 @@
         $ sha256sum Downloads/Miniconda_file.sh
    In your terminal window, run Miniconda:  
         
-        $bash Miniconda3-latest-Linux-x86_64.sh
+        $ bash Miniconda3-latest-Linux-x86_64.sh
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
    To make the changes take effect, close and then re-open your terminal window.  
-   Test your installation. In your terminal window, run the command:conda list. A list of installed packages appears if it has been installed correctly.  
+   Test your installation. In your terminal window, run the command:
+   
+       $ conda list. 
+   A list of installed packages appears if it has been installed correctly.  
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
-a.Create a clean virtual environment:  
+a. Create a clean virtual environment:  
 
-       $conda create -n pycoQC python=3.6
+       $ conda create -n pycoQC python=3.6
 
 b. Install pycoQC with miniconda3:  
 
-        $ conda install -c aleg pycoqc
+       $ conda install -c aleg pycoqc
 
 c. Run pycoQC by the command:  
 
-        $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+       $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
 
-(4) Minimap2:  
-Install:  
+(4) Minimap2 installation:    
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 
@@ -64,18 +66,17 @@ Type in the command below. Open the html file to visualize the results.
     
         $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
-2. Combine fastq files (pass & fail) to one fastq file.
-In Windows OS CMD:  
+2. Combine fastq files (pass & fail) to one fastq file.  
+    In Windows OS CMD:  
     
         $ copy (file_name)_*.fastq mixed.fastq
-In Linux OS: 
+    In Linux OS: 
     
         $ cat (file_name)_*.fastq > mixed.fastq
 
 3. Sort out the RNA with and without tag in the first 40 nt:
-In Linux OS:
-    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
-    Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
+   Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
+   Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
         
         $ sudo apt-get install python
         $ python get-pip.py # pip install, optional
@@ -86,16 +87,14 @@ In Linux OS:
         $ python main.py input_file.fastq tagged.fastq untagged.fastq
         # result files: tagged.fastq (as an example) and untagged.fastq
         
-4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:
-In Linux OS:
+4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
     Install minimap2. (https://github.com/lh3/minimap2)
     Run Minimap2 by typing in:
         
         $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
           # reference file like TAIR10_chr_all.fa, result file is output.sam
 
-5. Samtools to change the sam file to bam file and obtain its bam.bai file.
-In Linux OS:
+5. Samtools to change the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
     Intall samtools. (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
     Run Samtools by typing in (one by one):
     
@@ -110,15 +109,12 @@ In Windows OS:
     Download genome file from IGV for A. thaliana, human, mouse, or E.coli: Genome > Load Genome from Server > Select the genome file
     Import the bam and bam.bai to Windows OS, then: File > Load from File > Select the output.bam file
   
-7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.
-In Linux OS:
-    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC
-    Install featureCounts (http://subread.sourceforge.net/): sudo apt-get install subread 
-    Run the command below:
+7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples. (In Linux OS:)  
+    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
+    Install featureCounts (http://subread.sourceforge.net/):   
+    
+        $ sudo apt-get install subread 
+   Run the command below:  
         
         $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
                 # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
-
-
-
-
