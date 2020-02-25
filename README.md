@@ -15,15 +15,18 @@
 
 # Simplified procedure for NAD-tagSeq data analysis
 
-1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:
-Type in the command below. Open the html file to visualize the results. 
-    pycoQC –f sequencing_summary.txt –o pycoQC.html
+1. In MiniConda3 active virtual environment, run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
+Type in the command below. Open the html file to visualize the results.   
+    
+    $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
 2. Combine fastq files (pass & fail) to one fastq file.
 In Windows OS CMD:  
-    copy (file_name)_*.fastq mixed.fastq
+    
+    $copy (file_name)_*.fastq mixed.fastq
 In Linux OS: 
-    cat (file_name)_*.fastq > mixed.fastq
+    
+    $cat (file_name)_*.fastq > mixed.fastq
 
 3. Sort out the RNA with and without tag in the first 40 nt:
 In Linux OS:
