@@ -69,7 +69,7 @@ c. Run pycoQC by the command:
 # Demo files			
 
     | sofware | input_files | output_files |
-    | --- | --- | --- |
+    |---|---|---|
     | pycoQC | sequencing_summary.txt | pycoQC.html |
     
     
