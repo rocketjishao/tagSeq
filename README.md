@@ -1,3 +1,7 @@
+➥ ./gh-md-toc https://github.com/rocketjishao/NAD-tagSeq/edit/master/README.md
+Table of Contents
+
+
 # Demo files			
        
 |sofware|input_files|output_files|  
