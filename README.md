@@ -68,17 +68,9 @@ c. Run pycoQC by the command:
 
 # Demo files			
        
-    | Tables        | Are           | Cool  |
-    | ------------- |:-------------:| -----:|
-    | 第三欄        | 靠右對齊      | $1600 |
-    | 第二欄        | 置中對齊      |   $12 |
-    | 斑馬條紋      | 是整齊的      |    $1 |
-    
     | sofware | input_files | output_files |
     |---|---|---|
     | pycoQC | sequencing_summary.txt | pycoQC.html |
-    
-    
     | Windows OS CMS | f_*.fastq | mixed.fastq|
     | main.py | mixed.fastq | tagged.fastquntagged.fastq |
     | minimap2 | tagged.fastq reference_file(TAIR10_chr_all.fa) | output.sam |
