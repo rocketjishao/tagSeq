@@ -40,16 +40,16 @@ In Linux OS:
 In Linux OS:
     Install minimap2. (https://github.com/lh3/minimap2)
     Run Minimap2 by typing in:
-        ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
+        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
           # reference file like TAIR10_chr_all.fa, result file is output.sam
 
 5. Samtools to change the sam file to bam file and obtain its bam.bai file.
 In Linux OS:
     Intall samtools. (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
     Run Samtools by typing in (one by one):
-        samtools view -bS output.sam > output.bam 
-        samtools sort -O BAM -o output_sort.bam  output.bam
-        samtools index output_sort.bam output_sort.bam.bai
+        $ samtools view -bS output.sam > output.bam 
+        $ samtools sort -O BAM -o output_sort.bam  output.bam
+        $ samtools index output_sort.bam output_sort.bam.bai
         # result files: output.bam, output_sort.bam, output_sort.bam.bai
 
 6. IGV to visualize the result
@@ -63,7 +63,7 @@ In Linux OS:
     And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC
     Install featureCounts (http://subread.sourceforge.net/): sudo apt-get install subread 
     Run the command below:
-        featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
+        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
         # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
 
 
