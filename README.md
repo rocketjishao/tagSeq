@@ -94,7 +94,7 @@ In Linux OS:
         Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
-        $ sha256sum Downloads/Miniconda_file.sh)
+        $ sha256sum Downloads/Miniconda_file.sh
    In your terminal window, run Miniconda:  
         
         $bash Miniconda3-latest-Linux-x86_64.sh
@@ -121,7 +121,4 @@ Install:
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 
-    $ make file ///python
-Use:  
-    
-    $ ./minimap2 -ax splice -uf -k14 ref.fa reads.fa > aln.sam  # noisy Nanopore Direct RNA-seq
+    $ make file
