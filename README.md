@@ -66,6 +66,13 @@ c. Run pycoQC by the command:
       $ sudo apt-get install subread 
         # then type in password
 
+# Demo files			
+
+    | sofware | input files|||
+				|---------|-------------|
+    |  pycoQC | sequencing_summary.txt   ||||
+    ||||||
+
 
 # Simplified procedure for NAD-tagSeq data analysis
 
