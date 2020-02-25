@@ -75,10 +75,12 @@ c. Run pycoQC by the command:
     
 adfad
 
-    | Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |    
+
+
+| Name     | Character |
+| ---      | ---       |
+| Backtick | `         |
+| Pipe     | \|        |
     
     | Windows OS CMS | f_*.fastq | mixed.fastq|  
     | main.py | mixed.fastq | tagged.fastquntagged.fastq |  
