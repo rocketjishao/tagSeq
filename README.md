@@ -3,7 +3,7 @@
 - [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
 - [Software installation and initiation:](#software-installation-and-initiation-)
-- [NAD-tagSeq data analysis procedure](#nad-tagseq data analysis procedure)
+- [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
 
 
 # Demo files			
