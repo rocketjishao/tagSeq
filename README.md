@@ -73,6 +73,13 @@ c. Run pycoQC by the command:
     | pycoQC | sequencing_summary.txt | pycoQC.html |  
     
     
+adfad
+
+    | Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |    
+    
     | Windows OS CMS | f_*.fastq | mixed.fastq|  
     | main.py | mixed.fastq | tagged.fastquntagged.fastq |  
     | minimap2 | tagged.fastq reference_file(TAIR10_chr_all.fa) | output.sam |  
