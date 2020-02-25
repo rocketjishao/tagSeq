@@ -68,11 +68,15 @@ c. Run pycoQC by the command:
 
 # Demo files			
 
-    | sofware | input files|||
-				|---------|-------------|
-    |  pycoQC | sequencing_summary.txt   ||||
-    ||||||
-
+    | sofware | input files| output file|
+    |---|---|
+    |  pycoQC | sequencing_summary.txt | pycoQC.html|
+    | Windows OS CMS | f_*.fastq | mixed.fastq|
+    | main.py | mixed.fastq | tagged.fastq , untagged.fastq |
+    | minimap2 | tagged.fastq, reference_file (TAIR10_chr_all.fa) | output.sam |
+    | samtools | output.sam | output.bam , output_sort.bam , output_sort.bam.bai |
+    | IGV | A. thaliana genome files , outpu_sort.bam, output_sort.bam.bai | 
+    | featureCounts | annotation file (TAIR10_GFF3_genes.gff), tagged.sam, untagged.sam | both and both.summary |
 
 # Simplified procedure for NAD-tagSeq data analysis
 
@@ -90,16 +94,11 @@ Type in the command below. Open the html file with web browser to visualize the 
         $ cat (file_name)_*.fastq > mixed.fastq
 
 3. Sort out the RNA with and without tag in the first 40 nt:
-   Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py
-   Install python (version 2.7.17): (http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/) 
-        
-        $ sudo apt-get install python
-        $ python get-pip.py # pip install, optional
-    
+   Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway for main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
         
-        $ python main.py input_file.fastq tagged.fastq untagged.fastq
+        $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
