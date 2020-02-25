@@ -16,7 +16,7 @@
 | minimap2 | tagged.fastq; reference_file(TAIR10_chr_all.fa) | output.sam |  
 | samtools | output.sam | output.bam; output_sort.bam; output_sort.bam.bai |  
 | IGV | [A. thaliana genome files (TAIR10)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar); output_sort.bam; output_sort.bam.bai | no |  
-| featureCounts | annotation file (TAIR10_GFF3_genes.gff); tagged.sam; untagged.sam | both; both.summary | 
+| featureCounts | [annotation file (TAIR10_GFF3_genes.gff)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_GFF3_genes.rar); tagged.sam; untagged.sam | both; both.summary | 
 
 
 # Softwares and code
