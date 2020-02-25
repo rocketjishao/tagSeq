@@ -71,6 +71,8 @@ c. Run pycoQC by the command:
     |sofware|input_files|output_files|  
     |---|---|---|  
     | pycoQC | sequencing_summary.txt | pycoQC.html |  
+    
+    
     | Windows OS CMS | f_*.fastq | mixed.fastq|  
     | main.py | mixed.fastq | tagged.fastquntagged.fastq |  
     | minimap2 | tagged.fastq reference_file(TAIR10_chr_all.fa) | output.sam |  
