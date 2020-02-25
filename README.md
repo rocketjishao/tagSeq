@@ -1,10 +1,9 @@
+# Table of content
+
 - [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
 - [Software installation and initiation:](#software-installation-and-initiation-)
 - [Simplified procedure for NAD-tagSeq data analysis](#simplified-procedure-for-nad-tagseq-data-analysis)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 
 # Demo files			
