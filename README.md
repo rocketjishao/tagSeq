@@ -24,8 +24,7 @@
         $ sudo apt-get install python3
 
 (2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), Installed on Ubuntu18.04:  
-    Download the installer:  
-        Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
+    Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
         $ sha256sum Downloads/Miniconda_file.sh
@@ -58,9 +57,13 @@ c. Run pycoQC by the command:
       $ git clone https://github.com/lh3/minimap2
       $ cd minimap2 
       $ make file
+(5) Samtools
+
+      $ sudo apt-get install -y samtools
+        # then type in password
 (5) Install featureCounts (http://subread.sourceforge.net/):  
     
-        $ sudo apt-get install subread 
+      $ sudo apt-get install subread 
 
 # Simplified procedure for NAD-tagSeq data analysis
 
