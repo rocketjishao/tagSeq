@@ -120,7 +120,8 @@ c. Run pycoQC by the command:
 Install:  
     
     $ git clone https://github.com/lh3/minimap2
-    $ cd minimap2 && make
+    $ cd minimap2 
+    $ make file ///python
 Use:  
     
     $ ./minimap2 -ax splice -uf -k14 ref.fa reads.fa > aln.sam  # noisy Nanopore Direct RNA-seq
