@@ -10,7 +10,7 @@
        
 |sofware|input_files|output_files|  
 |---|---|---|  
-| pycoQC | sequencing_summary.txt | pycoQC.html |     
+| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | pycoQC.html |     
 | Windows OS CMS | f_\*.fastq | mixed.fastq|  
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |  
 | minimap2 | tagged.fastq; reference_file(TAIR10_chr_all.fa) | output.sam |  
