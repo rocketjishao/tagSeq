@@ -1,15 +1,15 @@
 # Softwares and code
- (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology
- (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)
-*% The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:
-(3) Python 2.7 and 3.7 (http://www.python.org/downloads/)
-(4) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)            
-(5) PycoQC (https://github.com/a-slide/pycoQC)
-(6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)
-(7) Minimap2 (https://github.com/lh3/minimap2)
-(8) Samtools (http://samtools.sourceforge.net/)
-(9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)
-(10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)
+ (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology  
+ (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)  
+*% The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:  
+(3) Python 2.7 and 3.7 (http://www.python.org/downloads/)  
+(4) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)             
+(5) PycoQC (https://github.com/a-slide/pycoQC)  
+(6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)  
+(7) Minimap2 (https://github.com/lh3/minimap2)  
+(8) Samtools (http://samtools.sourceforge.net/)  
+(9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/)  
+(10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/)  
 
 
 
