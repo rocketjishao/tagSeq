@@ -99,36 +99,36 @@ d. Quit conda
    Run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
    Type in the command below. Open the html file with web browser to visualize the results.   
     
-        $ pycoQC –f sequencing_summary.txt –o pycoQC.html
+       $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
 2. Combine fastq files (pass & fail) to one fastq file.  
     In Windows OS CMD:  
     
-        $ copy (file_name)_*.fastq mixed.fastq
+       $ copy (file_name)_*.fastq mixed.fastq
     In Linux OS: 
     
-        $ cat (file_name)_*.fastq > mixed.fastq
+       $ cat (file_name)_*.fastq > mixed.fastq
 
 3. Sort out the RNA with and without tag in the first 40 nt:
    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway for main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
         
-        $ python main.py mixed.fastq tagged.fastq untagged.fastq
+       $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
    Run Minimap2 by typing in:
         
-        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
+       $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
           # reference file like TAIR10_chr_all.fa, result file is output.sam
 
 5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
    Run Samtools by typing in (one by one):
     
-        $ samtools view -bS output.sam > output.bam 
-        $ samtools sort -O BAM -o output_sort.bam  output.bam
-        $ samtools index output_sort.bam output_sort.bam.bai
+       $ samtools view -bS output.sam > output.bam 
+       $ samtools sort -O BAM -o output_sort.bam  output.bam
+       $ samtools index output_sort.bam output_sort.bam.bai
           # result files: output.bam, output_sort.bam, output_sort.bam.bai
 
 6. IGV to visualize the result, in Windows OS:
@@ -142,5 +142,5 @@ d. Quit conda
    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
         
-        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
+       $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
           # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
