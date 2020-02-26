@@ -95,8 +95,8 @@ d. Quit conda
 (4) Minimap2 installation (https://github.com/lh3/minimap2) :    
     
     $ git clone https://github.com/lh3/minimap2
-    $ cd minimap2 
-    $ make file
+    $ cd minimap2 && make
+    
 (5) Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
       
     $ sudo apt-get install -y samtools
