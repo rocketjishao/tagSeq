@@ -92,7 +92,7 @@ d. Quit conda
 
     $ conda deactivate
 
-(4) Minimap2 installation:    
+(4) Minimap2 installation (https://github.com/lh3/minimap2) :    
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 
