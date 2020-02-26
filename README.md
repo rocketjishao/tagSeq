@@ -141,7 +141,7 @@ d. Quit conda
     
        $ samtools view -bS tagged.sam > tagged.bam 
        $ samtools sort -O BAM -o tagged_sort.bam tagged.bam
-       $ samtools index tagged_sort.bam tagged_sort.bam.bai
+       $ samtools index tagged_sort.bam
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
 6. IGV to visualize the result, in Windows OS:
