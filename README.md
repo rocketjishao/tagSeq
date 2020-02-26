@@ -133,16 +133,16 @@ d. Quit conda
 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
    Run Minimap2 by typing in:
         
-       $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > output.sam
-          # reference file like TAIR10_chr_all.fa, result file is output.sam
+       $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
+          # reference file like TAIR10_chr_all.fa, result file is tagged.sam
 
 5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
    Run Samtools by typing in (one by one):
     
-       $ samtools view -bS output.sam > output.bam 
-       $ samtools sort -O BAM -o output_sort.bam  output.bam
-       $ samtools index output_sort.bam output_sort.bam.bai
-          # result files: output.bam, output_sort.bam, output_sort.bam.bai
+       $ samtools view -bS tagged.sam > tagged.bam 
+       $ samtools sort -O BAM -o tagged_sort.bam tagged.bam
+       $ samtools index tagged_sort.bam tagged_sort.bam.bai
+          # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
 6. IGV to visualize the result, in Windows OS:
     Download IGV: (https://software.broadinstitute.org/software/igv/download)
