@@ -47,10 +47,10 @@
     Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
-        $ sha256sum Downloads/Miniconda_file.sh
+        $ sha256sum Downloads/Miniconda3-latest-Linux-x86_64.sh
    In your terminal window, run Miniconda:  
         
-        $ bash Miniconda3-latest-Linux-x86_64.sh
+        $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
    To make the changes take effect, close and then re-open your terminal window.  
