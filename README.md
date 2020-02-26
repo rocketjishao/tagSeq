@@ -15,7 +15,7 @@
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |  
 | minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10_chr_all.fa)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar) or [mouse]())  | tagged.sam |  
 | samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |  
-| IGV | A. thaliana genome files (TAIR10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
+| IGV | genome files (A. thaliana: TAIR10.genome or mouse:mm10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
 | featureCounts | annotation file ([TAIR10_GFF3_genes.gff](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_GFF3_genes.rar) or [gencode.vM23.annotation.gtf]()); tagged.sam; untagged.sam | both; both.summary | 
 
 
