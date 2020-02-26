@@ -10,7 +10,7 @@
        
 |sofware|input_files|output_files| web show | 
 |---|---|---|---|
-| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) |    
+| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) |    
 | Windows OS CMS | f_\*.fastq | mixed.fastq|  no |
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq | no |  
 | minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10_chr_all.fa](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar) or [mouse mm10.fa]())  | tagged.sam | no |  
