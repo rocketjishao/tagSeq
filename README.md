@@ -16,7 +16,7 @@
 | minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10_chr_all.fa](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar) or [mouse mm10.fa]())  | tagged.sam |   
 | samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
 | IGV | genome files ([A. thaliana TAIR10.genome]() or [mouse mm10.genome]()); tagged_sort.bam; tagged_sort.bam.bai | no |  
-| featureCounts | annotation file ([TAIR10_GFF3_genes.gff](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [gencode.vM23.annotation.gtf](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M24/gencode.vM24.chr_patch_hapl_scaff.annotation.gtf.gz); tagged.sam; untagged.sam | both; both.summary |  
+| featureCounts | annotation file ([TAIR10_GFF3_genes.gff](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [gencode.vM23.annotation.gtf](https://www.gencodegenes.org/mouse/); tagged.sam; untagged.sam | both; both.summary |  
 
 
 # Softwares and code
