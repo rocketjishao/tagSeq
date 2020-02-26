@@ -51,15 +51,28 @@
    In your terminal window, run Miniconda:  
         
     $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
-        # also needed for second run
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
    To make the changes take effect, close and then re-open your terminal window. 
-       # To see "(base)" in the front of the terminal command line. 
+       # You can see "(base)" in the front of the terminal command line. 
    Test your installation. In your terminal window, run the command:
    
     $ conda list
    A list of installed packages appears if it has been installed correctly.  
+   To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
+             
+    $ conda config --show | grep auto_activate_base
+          
+   To set it false
+
+    $ conda config --set auto_activate_base False
+    $ source ~/.bashrc
+   To reactivate set it to True
+
+    $ conda config --set auto_activate_base True
+    $ source ~/.bashrc
+      
+
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
 a. Create a clean virtual environment:  
