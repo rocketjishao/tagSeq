@@ -13,9 +13,9 @@
 | pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) |     
 | Windows OS CMS | f_\*.fastq | mixed.fastq|  
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |  
-| minimap2 | tagged.fastq; [reference_file(TAIR10_chr_all.fa)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar) | output.sam |  
-| samtools | output.sam | output.bam; output_sort.bam; output_sort.bam.bai |  
-| IGV | A. thaliana genome files (TAIR10.genome); output_sort.bam; output_sort.bam.bai | no |  
+| minimap2 | tagged.fastq; [reference_file(TAIR10_chr_all.fa)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_chr_1_3.rar) | tagged.sam |  
+| samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |  
+| IGV | A. thaliana genome files (TAIR10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
 | featureCounts | [annotation file (TAIR10_GFF3_genes.gff)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/TAIR10_GFF3_genes.rar); tagged.sam; untagged.sam | both; both.summary | 
 
 
