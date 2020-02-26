@@ -54,7 +54,8 @@
         # also needed for second run
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
-   To make the changes take effect, close and then re-open your terminal window.  
+   To make the changes take effect, close and then re-open your terminal window. 
+       # To see "(base)" in the front of the terminal command line. 
    Test your installation. In your terminal window, run the command:
    
     $ conda list
