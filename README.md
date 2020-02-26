@@ -19,6 +19,7 @@
 | featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
 
 
+
 # Softwares and code
  (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology  
  (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)  
