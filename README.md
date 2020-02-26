@@ -68,9 +68,16 @@ b. Install pycoQC with miniconda3:
 
        $ conda install -c aleg pycoqc
 
+b2. Second run:
+      
+       $ conda activate pycoQC
+
 c. Run pycoQC by the command:  
 
        $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+d. Quit conda 
+
+       $ conda deactivate
 
 (4) Minimap2 installation:    
     
