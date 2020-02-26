@@ -68,7 +68,7 @@ b. Install pycoQC with miniconda3:
 
        $ conda install -c aleg pycoqc
 
-b2. Second run:
+b'. Second run:
       
        $ conda activate pycoQC
 
