@@ -35,49 +35,49 @@
 # Software installation and initiation
 (1) python2.7 and python3.6 (Installed on Ubuntu:)
     
-        $ sudo apt-get install python2.
+    $ sudo apt-get install python2.
           # Then type in password
-        $ sudo apt-get install python-pip 
+    $ sudo apt-get install python-pip 
           # or try $ python get-pip.py
 
-        $ sudo add-apt-repository ppa:jonathonf/python-3.6
+    $ sudo add-apt-repository ppa:jonathonf/python-3.6
           # Then type in password, or try $ sudo apt-get install python3
 
 (2) Minicode3 (https://conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
     Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
-        $ sha256sum Downloads/Miniconda3-latest-Linux-x86_64.sh
+    $ sha256sum Downloads/Miniconda3-latest-Linux-x86_64.sh
    In your terminal window, run Miniconda:  
         
-        $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
+    $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
    To make the changes take effect, close and then re-open your terminal window.  
    Test your installation. In your terminal window, run the command:
    
-       $ conda list. 
+    $ conda list
    A list of installed packages appears if it has been installed correctly.  
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
 a. Create a clean virtual environment:  
 
-       $ conda create -n pycoQC python=3.6
+    $ conda create -n pycoQC python=3.6
 
 b. Install pycoQC with miniconda3:  
 
-       $ conda install -c aleg pycoqc
+    $ conda install -c aleg pycoqc
 
 b'. Second run:
       
-       $ conda activate pycoQC
+    $ conda activate pycoQC
 
 c. Run pycoQC by the command:  
 
-       $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
+    $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
 d. Quit conda 
 
-       $ conda deactivate
+    $ conda deactivate
 
 (4) Minimap2 installation:    
     
