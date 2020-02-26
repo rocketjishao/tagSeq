@@ -146,9 +146,9 @@ d. Quit conda
 
 6. IGV to visualize the result, in Windows OS:
     Download IGV: (https://software.broadinstitute.org/software/igv/download)
-    Download genome file from IGV for A. thaliana, human, mouse, or E.coli: 
+    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
         Genome > Load Genome from Server > Select the genome file
-    Import the bam and bam.bai to Windows OS, then: 
+    Import the bam and bam.bai to Windows OS, then:   
         File > Load from File > Select the output.bam file
   
 7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples. (In Linux OS:)  
