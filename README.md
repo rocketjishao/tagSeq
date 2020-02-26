@@ -13,10 +13,10 @@
 | pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) ([web browser)](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html)) |    
 | Windows OS CMS | f_\*.fastq | mixed.fastq|  
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |   
-| minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10_chr_all.fa](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa]())  | tagged.sam |   
+| minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10_chr_all.fa](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/dna_index/Mus_musculus.GRCm38.dna.toplevel.fa.gz))  | tagged.sam |   
 | samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
 | IGV | genome files ([A. thaliana TAIR10.genome]() or [mouse mm10.genome]()); tagged_sort.bam; tagged_sort.bam.bai | no |  
-| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
+| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
 
 
 # Softwares and code
