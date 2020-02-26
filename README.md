@@ -15,7 +15,7 @@
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |   
 | minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz))  | tagged.sam |   
 | samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
-| IGV | genome files ([A. thaliana TAIR10.genome]() or [mouse mm10.genome]()); tagged_sort.bam; tagged_sort.bam.bai | no |  
+| IGV | genome files (A. thaliana TAIR10.genome or mouse mm10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
 | featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
 
 
