@@ -43,7 +43,7 @@
         $ sudo add-apt-repository ppa:jonathonf/python-3.6
           # Then type in password, or try $ sudo apt-get install python3
 
-(2) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
+(2) Minicode3 (https://conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
     Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
     Verify your installer hashes, in a terminal window enter:  
         
