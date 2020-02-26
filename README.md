@@ -51,6 +51,7 @@
    In your terminal window, run Miniconda:  
         
     $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
+        # also needed for second run
    Follow the prompts on the installer screens.  
    If you are unsure about any setting, accept the defaults. You can change them later.  
    To make the changes take effect, close and then re-open your terminal window.  
@@ -68,10 +69,6 @@ b. Install pycoQC with miniconda3:
 
     $ conda install -c aleg pycoqc
 
-b'. Second run:
-      
-    $ conda activate pycoQC
-
 c. Run pycoQC by the command:  
 
     $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
@@ -81,16 +78,16 @@ d. Quit conda
 
 (4) Minimap2 installation:    
     
-      $ git clone https://github.com/lh3/minimap2
-      $ cd minimap2 
-      $ make file
+    $ git clone https://github.com/lh3/minimap2
+    $ cd minimap2 
+    $ make file
 (5) Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
       
-      $ sudo apt-get install -y samtools
+    $ sudo apt-get install -y samtools
         # then type in password
 (6) Install featureCounts (http://subread.sourceforge.net/):  
     
-      $ sudo apt-get install subread 
+    $ sudo apt-get install subread 
         # then type in password 
 
 # NAD-tagSeq data analysis procedure
