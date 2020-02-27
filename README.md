@@ -34,7 +34,7 @@
 (10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/) to count the reads of tagged RNA in different samples.  
 
 # Software installation and initiation
-(1) python2.7 and python3.6 (Installed on Ubuntu:)
+## python2.7 and python3.6 (Installed on Ubuntu:)
     
     $ sudo apt-get install python2.
           # Then type in password
@@ -44,7 +44,7 @@
     $ sudo add-apt-repository ppa:jonathonf/python-3.6
           # Then type in password, or try $ sudo apt-get install python3
 
-(2) Minicode3 (https://conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
+## Minicode3 (https://conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
    a.Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
    b. Verify your installer hashes, in a terminal window enter:  
         
@@ -66,7 +66,7 @@
              
     $ conda config --show | grep auto_activate_base
 
-(3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
+## pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
    a. Create a clean virtual environment (only needed for the 1st run):  
 
     $ conda create -n pycoQC python=3.6
@@ -94,28 +94,28 @@
 
     $ conda config --set auto_activate_base True
     $ source ~/.bashrc
-(4) Minimap2 installation (https://github.com/lh3/minimap2) :    
+## Minimap2 installation (https://github.com/lh3/minimap2) :    
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 && make
-(5) Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
+## Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
       
     $ sudo apt-get install -y samtools
         # then type in password
-(6) Install featureCounts (http://subread.sourceforge.net/):  
+## Install featureCounts (http://subread.sourceforge.net/):  
     
     $ sudo apt-get install subread 
         # then type in password 
 
 # NAD-tagSeq data analysis procedure
 
-1. In MiniConda3 active virtual environment, 
+## 1. In MiniConda3 active virtual environment, 
    Run pycoQC to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
    Type in the command below. Open the html file with web browser to visualize the results.   
     
        $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
-2. Combine fastq files (pass & fail) to one fastq file.  
+## 2. Combine fastq files (pass & fail) to one fastq file.  
     In Windows OS CMD:  
     
        $ copy file_*.fastq mixed.fastq
@@ -123,7 +123,7 @@
     
        $ cat file_*.fastq > mixed.fastq
 
-3. Sort out the RNA with and without tag in the first 40 nt:
+## 3. Sort out the RNA with and without tag in the first 40 nt:
    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway for main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
@@ -131,13 +131,13 @@
        $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
-4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
+## 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
    Run Minimap2 by typing in:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
           # reference file like TAIR10_chr_all.fa, result file is tagged.sam
 
-5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
+## 5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS tagged.sam > tagged.bam 
@@ -145,14 +145,14 @@
        $ samtools index tagged_sort.bam
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
-6. IGV to visualize the result, 
+## 6. IGV to visualize the result, 
    in Linux OS: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip
     Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file
     Import the bam and bam.bai to Windows OS, then:   
           File > Load from File > Select the tagged.bam file
   
-7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples. (In Linux OS:)  
+## 7. Use featureCounts to count each gene to the RNA reads of tagged and untagged counterparts, or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples. (In Linux OS:)  
    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
         
