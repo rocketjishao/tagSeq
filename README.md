@@ -45,43 +45,43 @@
           # Then type in password, or try $ sudo apt-get install python3
 
 (2) Minicode3 (https://conda.io/projects/conda/en/latest/user-guide/install/linux.html), installed on Ubuntu18.04:  
-    Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
-    Verify your installer hashes, in a terminal window enter:  
+   a.Download the installer: Miniconda installer for Linux.(https://docs.conda.io/en/latest/miniconda.html#linux-installers)  
+   b. Verify your installer hashes, in a terminal window enter:  
         
     $ sha256sum Downloads/Miniconda3-latest-Linux-x86_64.sh
-   In your terminal window, run Miniconda:  
+   c.In your terminal window, run Miniconda:  
         
     $ bash Downloads/Miniconda3-latest-Linux-x86_64.sh
-   Follow the prompts on the installer screens.  
-   If you are unsure about any setting, accept the defaults. You can change them later.  
-   To make the changes take effect, type in the command below, or close and then re-open your terminal window. 
+   d.Follow the prompts on the installer screens.  
+   e.If you are unsure about any setting, accept the defaults. You can change them later.  
+   f.To make the changes take effect, type in the command below, or close and then re-open your terminal window. 
     
     $ source ~/.bashrc
        # Then you can see "(base)" in the front of the terminal command line. 
-   Test your installation. In your terminal window, run the command:
+   g.Test your installation. In your terminal window, run the command:
    
     $ conda list
-   A list of installed packages appears if it has been installed correctly.  
-   To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
+   h. A list of installed packages appears if it has been installed correctly.  
+   i. To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
              
     $ conda config --show | grep auto_activate_base
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
-a. Create a clean virtual environment (only needed for the 1st run):  
+   a. Create a clean virtual environment (only needed for the 1st run):  
 
     $ conda create -n pycoQC python=3.6
 
-b. Install pycoQC with miniconda3:(only needed for the 1st run)  
+   b. Install pycoQC with miniconda3:(only needed for the 1st run)  
 
     $ conda install -c aleg pycoqc
 
-c. Run pycoQC by the command:  
+   c. Run pycoQC by the command:  
 
     $ pycoQC -f sequencing_summary.txt -o pycoQC_output.html
-d. Quit conda 
+   d. Quit conda 
 
     $ conda deactivate
-e, For 2nd run
+   e. For 2nd, 3rd,... run
    To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
              
     $ conda config --show | grep auto_activate_base
@@ -98,7 +98,6 @@ e, For 2nd run
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 && make
-    
 (5) Samtools installation (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
       
     $ sudo apt-get install -y samtools
