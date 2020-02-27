@@ -136,13 +136,13 @@
        $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
-## 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing: (In Linux OS):  
+## 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:  
    Run Minimap2 by typing in the command:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
           # reference file like TAIR10_chr_all.fa, result file is tagged.sam
 
-## 5. Samtools to translate the sam file to bam file and obtain its bam.bai file. (In Linux OS):  
+## 5. Samtools to translate the sam file to bam file and obtain its bam.bai file:  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS tagged.sam > tagged.bam 
