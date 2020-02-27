@@ -142,7 +142,15 @@
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
           # reference file like TAIR10_chr_all.fa, result file is tagged.sam
 
-## 5. Samtools to translate the sam file to bam file and obtain its bam.bai file:  
+## 5. Use featureCounts to count reads to genes
+   Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
+   And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
+   Run the command below:  
+        
+       $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
+          # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
+
+## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file:  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS tagged.sam > tagged.bam 
@@ -150,17 +158,10 @@
        $ samtools index tagged_sort.bam
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
-## 6. IGV to visualize the result  
+## 7. IGV to visualize the result  
    (for Linux OS) https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip
     Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file
     Import the bam and bam.bai to Windows OS, then:   
           File > Load from File > Select the tagged.bam file
   
-## 7. Use featureCounts to count reads to genes
-   Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
-   And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
-   Run the command below:  
-        
-       $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-          # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
