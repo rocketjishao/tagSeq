@@ -157,7 +157,7 @@
     Import the bam and bam.bai to Windows OS, then:   
           File > Load from File > Select the tagged.bam file
   
-## 7. Use featureCounts to count each gene to the reads
+## 7. Use featureCounts to count reads to genes
    Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
