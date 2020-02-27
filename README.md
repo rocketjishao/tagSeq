@@ -65,24 +65,13 @@
    To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
              
     $ conda config --show | grep auto_activate_base
-          
-   To set it false
-
-    $ conda config --set auto_activate_base False
-    $ source ~/.bashrc
-   To reactivate set it to True
-
-    $ conda config --set auto_activate_base True
-    $ source ~/.bashrc
-      
-
 
 (3) pycoQC: (https://a-slide.github.io/pycoQC/installation/)  
-a. Create a clean virtual environment:  
+a. Create a clean virtual environment (only needed for the 1st run):  
 
     $ conda create -n pycoQC python=3.6
 
-b. Install pycoQC with miniconda3:  
+b. Install pycoQC with miniconda3:(only needed for the 1st run)  
 
     $ conda install -c aleg pycoqc
 
@@ -92,7 +81,19 @@ c. Run pycoQC by the command:
 d. Quit conda 
 
     $ conda deactivate
+e, For 2nd run
+   To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
+             
+    $ conda config --show | grep auto_activate_base
+          
+   To set it false
 
+    $ conda config --set auto_activate_base False
+    $ source ~/.bashrc
+   To reactivate set it to True
+
+    $ conda config --set auto_activate_base True
+    $ source ~/.bashrc
 (4) Minimap2 installation (https://github.com/lh3/minimap2) :    
     
     $ git clone https://github.com/lh3/minimap2
