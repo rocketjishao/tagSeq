@@ -23,7 +23,7 @@
 # Softwares and code
  (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology  
  (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)  
-***The following code packages should be installed on Ubuntu18.04, except Integrative Genomics Viewer:***  
+***The following code packages should be installed on Ubuntu**  
 (3) Python 2.7 and 3.7 (http://www.python.org/downloads/)  
 (4) Minicode3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html)             
 (5) PycoQC (https://github.com/a-slide/pycoQC)  
@@ -147,7 +147,6 @@ e, For 2nd run
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
 6. IGV to visualize the result, 
-   in Windows OS: Download IGV: (https://software.broadinstitute.org/software/igv/download)
    in Linux OS: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip
     Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file
