@@ -158,7 +158,7 @@
    Run the command below:  
         
        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-          # annotation file like TAIR10_GFF3_genes.gff, result files are both and both.summary
+          # annotation file like TAIR10_GFF3_genes.gff or gencode.vM23.annotation.gtf, result files are both and both.summary
 
 ## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file:  
    Run Samtools by typing in (one by one):
