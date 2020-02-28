@@ -117,7 +117,9 @@
 ## IGV to visualize the result (for Linux OS)  
    Download the IGV file: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip;  
    Unzip the package;  
-   
+   In the terminal window, start IGV by the command line:
+
+    $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
 # NAD-tagSeq data analysis procedure
 
 ## 1. In MiniConda3 active virtual environment, run pycoQC:
