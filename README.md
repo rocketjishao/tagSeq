@@ -120,6 +120,8 @@
    In the terminal window, start IGV by the command line:
 
     $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
+   Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
+          Genome > Load Genome from Server > Select the genome file  
 # NAD-tagSeq data analysis procedure
 
 ## 1. In MiniConda3 active virtual environment, run pycoQC:
@@ -167,9 +169,6 @@
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
 ## 7. IGV to visualize the result  
-   (for Linux OS) https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip  
-    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
-          Genome > Load Genome from Server > Select the genome file
-    Import the bam and bam.bai to Windows OS, then:   
+   Import the bam and bam.bai to Windows OS, then:   
           File > Load from File > Select the tagged.bam file
   
