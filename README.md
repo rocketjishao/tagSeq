@@ -170,5 +170,5 @@
 
 ## 7. IGV to visualize the result  
    Import the bam and bam.bai to Windows OS, then:   
-          File > Load from File > Select the tagged.bam file
+          File > Load from File > Select the tagged_sort.bam file
   
