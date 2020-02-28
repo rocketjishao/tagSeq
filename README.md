@@ -14,9 +14,9 @@
 | Windows OS CMS | file_\*.fastq | mixed.fastq|  
 | main.py | mixed.fastq | tagged.fastq; untagged.fastq |   
 | minimap2 | tagged.fastq; reference_file [(A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz))  | tagged.sam |   
+| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
 | samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
 | IGV | genome files (TAIR10.genome or mm10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
-| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
 
 
 
@@ -101,16 +101,19 @@
     
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 && make
-## Samtools installation 
-(https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
-      
-    $ sudo apt-get install -y samtools
-        # then type in password
+  
 ## Install featureCounts 
 (http://subread.sourceforge.net/):  
     
     $ sudo apt-get install subread 
         # then type in password 
+
+## Samtools installation 
+(https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
+      
+    $ sudo apt-get install -y samtools
+        # then type in password
+
 
 # NAD-tagSeq data analysis procedure
 
