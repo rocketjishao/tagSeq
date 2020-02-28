@@ -29,10 +29,10 @@
 (5) PycoQC (https://github.com/a-slide/pycoQC)  
 (6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)  
 (7) Minimap2 (https://github.com/lh3/minimap2) to align the sequenced RNA to genome or transcriptome databases for interpretation of the RNA identities;  
-(8) Samtools (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
-(9) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
-(10) featureCounts (http://bioinf.wehi.edu.au/featureCounts/) to count the reads of tagged RNA in different samples.  
-
+(8) featureCounts (http://bioinf.wehi.edu.au/featureCounts/) to count the reads of tagged RNA in different samples.  
+(9) Samtools (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
+(10) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
+  
 # Software installation and initiation
 ## python2.7 and python3.6
     
