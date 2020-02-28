@@ -114,7 +114,10 @@
     $ sudo apt-get install -y samtools
         # then type in password
 
-
+## IGV to visualize the result (for Linux OS)  
+   Download the IGV file: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip;  
+   Unzip the package;  
+   
 # NAD-tagSeq data analysis procedure
 
 ## 1. In MiniConda3 active virtual environment, run pycoQC:
