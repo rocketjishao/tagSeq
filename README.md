@@ -8,7 +8,7 @@
   * [Minimap2 installation](#minimap2-installation)
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
-  * [IGV to visualize the result (for Linux OS)](#igv-to-visualize-the-result--for-linux-os-)
+  * [IGV (for Linux OS)](#igv-to-visualize-the-result--for-linux-os-)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. In MiniConda3 active virtual environment, run pycoQC:](#1-in-miniconda3-active-virtual-environment--run-pycoqc-)
   * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
@@ -127,7 +127,7 @@
     $ sudo apt-get install -y samtools
         # then type in password
 
-## IGV to visualize the result (for Linux OS)  
+## IGV (for Linux OS)  
    Download the IGV file: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip;  
    Unzip the package;  
    In the terminal window, start IGV by the command line:
