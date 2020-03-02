@@ -6,8 +6,8 @@
   * [Minicode3](#minicode3)
   * [pycoQC:](#pycoqc-)
   * [Minimap2 installation](#minimap2-installation)
-  * [Install featureCounts](#install-featurecounts)
-  * [Samtools installation](#samtools-installation)
+  * [featureCounts](#featurecounts)
+  * [Samtools](#samtools)
   * [IGV to visualize the result (for Linux OS)](#igv-to-visualize-the-result--for-linux-os-)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. In MiniConda3 active virtual environment, run pycoQC:](#1-in-miniconda3-active-virtual-environment--run-pycoqc-)
@@ -115,13 +115,13 @@
     $ git clone https://github.com/lh3/minimap2
     $ cd minimap2 && make
   
-## Install featureCounts 
+## featureCounts 
 (http://subread.sourceforge.net/):  
     
     $ sudo apt-get install subread 
         # then type in password 
 
-## Samtools installation 
+## Samtools 
 (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
       
     $ sudo apt-get install -y samtools
