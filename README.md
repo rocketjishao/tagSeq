@@ -1,9 +1,22 @@
 # Table of content
-
 - [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
 - [Software installation and initiation](#software-installation-and-initiation)
+  * [python2.7 and python3.6](#python27-and-python36)
+  * [Minicode3](#minicode3)
+  * [pycoQC:](#pycoqc-)
+  * [Minimap2 installation](#minimap2-installation)
+  * [Install featureCounts](#install-featurecounts)
+  * [Samtools installation](#samtools-installation)
+  * [IGV to visualize the result (for Linux OS)](#igv-to-visualize-the-result--for-linux-os-)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
+  * [1. In MiniConda3 active virtual environment, run pycoQC:](#1-in-miniconda3-active-virtual-environment--run-pycoqc-)
+  * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
+  * [3. Sort out the RNA with and without tag in the first 40 nt:](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt-)
+  * [4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:](#4-minimap2-to-analyze-the-rna-sequenced-from-nanopore-direct-rna-sequencing-)
+  * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
+  * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file:](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file-)
+  * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
 
 
 # Demo files			
