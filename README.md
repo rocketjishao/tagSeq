@@ -8,7 +8,7 @@
   * [Minimap2 installation](#minimap2-installation)
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
-  * [IGV (for Linux OS)](#igv-for--linux-os-)
+  * [IGV (for Linux OS)](#igv--for-linux-os-)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. In MiniConda3 active virtual environment, run pycoQC:](#1-in-miniconda3-active-virtual-environment--run-pycoqc-)
   * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
