@@ -4,7 +4,7 @@
 - [Software installation and initiation](#software-installation-and-initiation)
   * [python2.7 and python3.6](#python27-and-python36)
   * [Minicode3](#minicode3)
-  * [pycoQC:](#pycoqc-)
+  * [pycoQC](#pycoqc)
   * [Minimap2 installation](#minimap2-installation)
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
@@ -80,7 +80,7 @@
              
     $ conda config --show | grep auto_activate_base
 
-## pycoQC:   
+## pycoQC   
 (https://a-slide.github.io/pycoQC/installation/)  
    a. Create a clean virtual environment (only needed for the 1st run):  
 
