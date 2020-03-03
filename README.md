@@ -10,7 +10,7 @@
   * [Samtools](#samtools)
   * [IGV for Linux OS](#igv-for-linux-os)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
-  * [1. In MiniConda3 active virtual environment, run pycoQC:](#1-in-miniconda3-active-virtual-environment--run-pycoqc-)
+  * [1. Run pycoQC In MiniConda3 active virtual environment:](#1-run-pycoqc-in-miniconda3-active-virtual-environment-)
   * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
   * [3. Sort out the RNA with and without tag in the first 40 nt:](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt-)
   * [4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:](#4-minimap2-to-analyze-the-rna-sequenced-from-nanopore-direct-rna-sequencing-)
@@ -137,7 +137,7 @@
           Genome > Load Genome from Server > Select the genome file  
 # NAD-tagSeq data analysis procedure
 
-## 1. In MiniConda3 active virtual environment, run pycoQC:
+## 1. Run pycoQC in MiniConda3 active virtual environment:
    to visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
    Type in the command below. Open the html file with web browser to visualize the results.   
      
