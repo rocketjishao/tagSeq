@@ -14,7 +14,7 @@
   * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
   * [2. Combine fastq files to one fastq file](#2-combine-fastq-files-to-one-fastq-file)
   * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
-  * [4. Minimap2 to align the reads to reference genes](#4-minimap2-to-align-the-reads-to-reference-genes)
+  * [4. Minimap2 to align the reads to reference sequence](#4-minimap2-to-align-the-reads-to-reference-sequence)
   * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
   * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
@@ -163,7 +163,7 @@
        $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
-## 4. Minimap2 to align the reads to reference genes   
+## 4. Minimap2 to align the reads to reference sequence   
    Run Minimap2 for analyzing the Nanopore direct RNA sequencing data by typing in the command:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
