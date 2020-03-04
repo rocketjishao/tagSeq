@@ -17,12 +17,12 @@
   * [4. Minimap2 to align the reads to reference sequence](#4-minimap2-to-align-the-reads-to-reference-sequence)
   * [5. Use featureCounts to count the aligned reads to genes](#5-use-featurecounts-to-count-the-aligned-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
-  * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
+  * [7. IGV to visualize the RNA structure](#7-igv-to-visualize-the-RNA-structure)
 
 
 # Softwares and code
  (1) MinKNOW 19.6.8, with base-caller of Guppy embedded, from Oxford Nanopore Technology  
- (2) Ubuntu 18.04 LTS, Linux-based operating system (https://ubuntu.com/download)  
+ (2) Ubuntu 18.04.3 LTS, Linux-based operating system (https://ubuntu.com/download)  
 ***The following code packages should be installed on Ubuntu**  
 (3) Python 2.7 and 3.7 (http://www.python.org/downloads/)  
 (4) Miniconda3 (https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html) for pycoQC uses;             
@@ -31,7 +31,7 @@
 (7) Minimap2 (https://github.com/lh3/minimap2) to align the sequenced RNA to genome or transcriptome databases for interpretation of the RNA identities;  
 (8) featureCounts (http://bioinf.wehi.edu.au/featureCounts/) to map and count the reads of tagged RNA to genes in different samples.  
 (9) Samtools (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
-(10) Integrative Genomics Viewer (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
+(10) Integrative Genomics Viewer 2.7.2 (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
   
 # Software installation and initiation
 ## python2.7 and python3.6
@@ -185,7 +185,7 @@
        $ samtools index tagged_sort.bam
           # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
-## 7. IGV to visualize the result  
+## 7. IGV to visualize the RNA structure  
    Import the bam and bam.bai to IGV by:   
           File > Load from File > Select the tagged_sort.bam file
   
