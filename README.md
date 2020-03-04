@@ -1,3 +1,7 @@
+# Note  
+## This is used for data analysis of NAD tagSeq protocol  
+## We mainly provide the demo data for mouse and *A.thaliana*  
+
 # Table of content
 - [Table of content](#table-of-content)
 - [Softwares and code](#softwares-and-code)
