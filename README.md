@@ -1,5 +1,4 @@
 # Table of content
-- [Demo files](#demo-files)
 - [Softwares and code](#softwares-and-code)
 - [Software installation and initiation](#software-installation-and-initiation)
   * [python2.7 and python3.6](#python27-and-python36)
@@ -9,6 +8,7 @@
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
   * [IGV for Linux OS](#igv-for-linux-os)
+- [Demo files](#demo-files)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. Run pycoQC in MiniConda3 active virtual environment.](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
   * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
@@ -17,20 +17,6 @@
   * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file:](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file-)
   * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
-
-
-# Demo files			
-       
-|Step|sofware|input_files|output_files|
-|---|---|---|---|
-|1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) ([(web browser)](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html)) |    
-|2| Windows OS CMS | file_\*.fastq ([1](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_1.fastq) [2](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_2.fastq) [3](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_3.fastq))| [mixed.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq)|  
-|3| main.py | mixed.fastq | [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq) |   
-|4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); tagged.fastq; untagged.fastq  | tagged.sam; untagged.sam |   
-|5| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
-|6| samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
-|7| IGV | genome files (TAIR10.genome or mm10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
-
 
 
 # Softwares and code
@@ -135,6 +121,23 @@
     $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
+
+
+# Demo files			
+       
+|Step|sofware|input_files|output_files|
+|---|---|---|---|
+|1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) ([(web browser)](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html)) |    
+|2| Windows OS CMS | file_\*.fastq ([1](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_1.fastq) [2](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_2.fastq) [3](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_3.fastq))| [mixed.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq)|  
+|3| main.py | mixed.fastq | [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq) |   
+|4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); tagged.fastq; untagged.fastq  | tagged.sam; untagged.sam |   
+|5| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); tagged.sam; untagged.sam | both; both.summary |  
+|6| samtools | tagged.sam | tagged.bam; tagged_sort.bam; tagged_sort.bam.bai |   
+|7| IGV | genome files (TAIR10.genome or mm10.genome); tagged_sort.bam; tagged_sort.bam.bai | no |  
+
+
+
+
 # NAD-tagSeq data analysis procedure
 
 ## 1. Run pycoQC in MiniConda3 active virtual environment.
