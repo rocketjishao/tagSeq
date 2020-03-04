@@ -5,7 +5,7 @@
   * [python2.7 and python3.6](#python27-and-python36)
   * [Miniconda3](#miniconda3)
   * [pycoQC](#pycoqc)
-  * [Minimap2 installation](#minimap2-installation)
+  * [Minimap2](#minimap2)
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
   * [IGV for Linux OS](#igv-for-linux-os)
@@ -36,7 +36,7 @@
 # Software installation and initiation
 ## python2.7 and python3.6
     
-    $ sudo apt-get install python2.
+    $ sudo apt-get install python2
           # Then type in password
     $ sudo apt-get install python-pip 
           # or try $ python get-pip.py
@@ -97,7 +97,7 @@
 
     $ conda config --set auto_activate_base True
     $ source ~/.bashrc
-## Minimap2 installation 
+## Minimap2 
 (https://github.com/lh3/minimap2) :    
     
     $ git clone https://github.com/lh3/minimap2
