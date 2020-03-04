@@ -12,7 +12,7 @@
 - [Demo files](#demo-files)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
-  * [2. Combine fastq files (pass & fail) to one fastq file](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
+  * [2. Combine fastq files to one fastq file](#2-combine-fastq-files-to-one-fastq-file)
   * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
   * [4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing](#4-minimap2-to-analyze-the-rna-sequenced-from-nanopore-direct-rna-sequencing)
   * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
@@ -147,7 +147,7 @@
      
      $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
-## 2. Combine fastq files (pass & fail) to one fastq file  
+## 2. Combine fastq files to one fastq file  
    In Windows OS CMD:  
        
        $ copy file_*.fastq mixed.fastq
