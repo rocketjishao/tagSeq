@@ -11,12 +11,12 @@
   * [IGV for Linux OS](#igv-for-linux-os)
 - [Demo files](#demo-files)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
-  * [1. Run pycoQC in MiniConda3 active virtual environment.](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
-  * [2. Combine fastq files (pass & fail) to one fastq file.](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
-  * [3. Sort out the RNA with and without tag in the first 40 nt:](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt-)
-  * [4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:](#4-minimap2-to-analyze-the-rna-sequenced-from-nanopore-direct-rna-sequencing-)
+  * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
+  * [2. Combine fastq files (pass & fail) to one fastq file](#2-combine-fastq-files--pass---fail--to-one-fastq-file)
+  * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
+  * [4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing](#4-minimap2-to-analyze-the-rna-sequenced-from-nanopore-direct-rna-sequencing)
   * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
-  * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file:](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file-)
+  * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
   * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
 
 
@@ -141,13 +141,13 @@
 
 # NAD-tagSeq data analysis procedure
 
-## 1. Run pycoQC in MiniConda3 active virtual environment.
+## 1. Run pycoQC in MiniConda3 active virtual environment
    To visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
    Type in the command below. Open the html file with web browser to visualize the results.   
      
      $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
-## 2. Combine fastq files (pass & fail) to one fastq file.  
+## 2. Combine fastq files (pass & fail) to one fastq file  
    In Windows OS CMD:  
        
        $ copy file_*.fastq mixed.fastq
@@ -155,7 +155,7 @@
     
        $ cat file_*.fastq > mixed.fastq
 
-## 3. Sort out the RNA with and without tag in the first 40 nt:
+## 3. Sort out the RNA with and without tag in the first 40 nt
    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway of main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
@@ -163,7 +163,7 @@
        $ python main.py mixed.fastq tagged.fastq untagged.fastq
           # result files: tagged.fastq (as an example) and untagged.fastq
         
-## 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing:  
+## 4. Minimap2 to analyze the RNA sequenced from Nanopore Direct RNA Sequencing  
    Run Minimap2 by typing in the command:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
@@ -177,7 +177,7 @@
        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
           # annotation file like TAIR10_GFF3_genes.gff or gencode.vM23.annotation.gtf, result files are both and both.summary
 
-## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file:  
+## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS tagged.sam > tagged.bam 
