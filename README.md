@@ -1,5 +1,5 @@
 # Note  
- #### This is used for data analysis of NAD tagSeq protocol, the demo files are mainly for mouse   
+### This is used for data analysis of NAD tagSeq protocol, the demo files are mainly for mouse   
 
 # Table of content
 - [Table of content](#table-of-content)
@@ -19,7 +19,7 @@
   * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
   * [4. Minimap2 to align the reads to reference sequence](#4-minimap2-to-align-the-reads-to-reference-sequence)
   * [5. Use featureCounts to count the aligned reads to genes](#5-use-featurecounts-to-count-the-aligned-reads-to-genes)
-  * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
+  * [6. Samtools to translate the sam file to bam file and index file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-index-file)
   * [7. IGV to visualize the RNA structure](#7-igv-to-visualize-the-RNA-structure)
 
 
@@ -183,7 +183,7 @@
        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
           # annotation file like gencode.vM23.annotation.gtf, result files are both and both.summary
 
-## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file  
+## 6. Samtools to translate the sam file to bam file and index file  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS tagged.sam > tagged.bam 
