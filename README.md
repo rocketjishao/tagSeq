@@ -84,7 +84,7 @@
    d. Quit conda 
 
     $ conda deactivate
-   e. For 2nd, 3rd,... run
+   e. To enter and exit conda for 2nd, 3rd,... run  
    To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
              
     $ conda config --show | grep auto_activate_base
@@ -97,6 +97,7 @@
 
     $ conda config --set auto_activate_base True
     $ source ~/.bashrc
+
 ## Minimap2 
 (https://github.com/lh3/minimap2) :    
     
@@ -136,7 +137,7 @@
 |4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); tagged.fastq; untagged.fastq  | tagged.sam; untagged.sam |   
 |5| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam); [untagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.sam) | [both](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both); [both.summary](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both.summary) |  
 |6| samtools | [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam) | [tagged.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.bam); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) |   
-|7| IGV | genome files (TAIR10.genome or mm10.genome); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) | no |  
+|7| IGV | genome files (TAIR10.genome or mm10.genome); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) | IGV figure |  
 
 
 
