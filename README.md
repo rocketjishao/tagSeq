@@ -15,7 +15,7 @@
   * [2. Combine fastq files to one fastq file](#2-combine-fastq-files-to-one-fastq-file)
   * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
   * [4. Minimap2 to align the reads to reference sequence](#4-minimap2-to-align-the-reads-to-reference-sequence)
-  * [5. Use featureCounts to count reads to genes](#5-use-featurecounts-to-count-reads-to-genes)
+  * [5. Use featureCounts to count the alinged reads to genes](#5-use-featurecounts-to-count-the-aligned-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
   * [7. IGV to visualize the result](#7-igv-to-visualize-the-result)
 
@@ -169,7 +169,7 @@
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
           # reference file like TAIR10_chr_all.fa, result file is tagged.sam
 
-## 5. Use featureCounts to count reads to genes
+## 5. Use featureCounts to count the alinged reads to genes
    Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
