@@ -137,10 +137,10 @@
 |1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) ([raw data](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html)) |    
 |2| Windows OS CMS | file_\*.fastq ([1](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_1.fastq) [2](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_2.fastq) [3](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_3.fastq))| [mixed.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq)|  
 |3| main.py | [mixed.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq) | [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq) |   
-|4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq)  | [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam); [untagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.sam) |   
-|5| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff) or [mouse](https://www.gencodegenes.org/mouse/)); [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam); [untagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.sam) | [both](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both); [both.summary](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both.summary) |  
+|4| minimap2 | reference_file ([mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq)  | [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam); [untagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.sam) |   
+|5| featureCounts | annotation file ([mouse](https://www.gencodegenes.org/mouse/)); [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam); [untagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.sam) | [both](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both); [both.summary](https://github.com/rocketjishao/NAD-tagSeq/blob/master/both.summary) |  
 |6| samtools | [tagged.sam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.sam) | [tagged.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged.bam); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) |   
-|7| IGV | genome files (TAIR10.genome or mm10.genome); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) | IGV figure |  
+|7| IGV | genome files (mm10.genome); [tagged_sort.bam](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam); [tagged_sort.bam.bai](https://github.com/rocketjishao/NAD-tagSeq/blob/master/tagged_sort.bam.bai) | IGV figure |  
 
 
 
@@ -173,7 +173,7 @@
    Run Minimap2 for analyzing the Nanopore direct RNA sequencing data by typing in the command:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
-          # reference file like TAIR10_chr_all.fa, result file is tagged.sam
+          # reference file like mm10.fa, result file is tagged.sam
 
 ## 5. Use featureCounts to count the aligned reads to genes
    Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
@@ -181,7 +181,7 @@
    Run the command below:  
         
        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-          # annotation file like TAIR10_GFF3_genes.gff or gencode.vM23.annotation.gtf, result files are both and both.summary
+          # annotation file like gencode.vM23.annotation.gtf, result files are both and both.summary
 
 ## 6. Samtools to translate the sam file to bam file and obtain its bam.bai file  
    Run Samtools by typing in (one by one):
