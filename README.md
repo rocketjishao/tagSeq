@@ -29,8 +29,8 @@
 (5) PycoQC (https://github.com/a-slide/pycoQC) to analyze the basecalling results;  
 (6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)  
 (7) Minimap2 (https://github.com/lh3/minimap2) to align the sequenced RNA to genome or transcriptome databases for interpretation of the RNA identities;  
-(8) featureCounts (http://bioinf.wehi.edu.au/featureCounts/) to map and count the reads of tagged RNA to genes in different samples.  
-(9) Samtools (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
+(8) featureCounts 1.6.0 (http://bioinf.wehi.edu.au/featureCounts/) to map and count the reads of tagged RNA to genes in different samples.  
+(9) Samtools 1.7 (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
 (10) Integrative Genomics Viewer 2.7.2 (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
   
 # Software installation and initiation
@@ -72,6 +72,7 @@
    a. Create a clean virtual environment (only needed for the 1st run):  
 
     $ conda create -n pycoQC python=3.6
+    # Note: python 2 is not supported by pycoQC
 
    b. Install pycoQC with miniconda3:(only needed for the 1st run)  
 
@@ -109,7 +110,8 @@
         # then type in password 
 
 ## Samtools 
-(https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)
+(https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)  
+(http://www.htslib.org/download/)
       
     $ sudo apt-get install -y samtools
         # then type in password
