@@ -167,13 +167,13 @@
    Sort out the RNAs with and without tag RNA sequence by typing in:
         
        $ python main.py mixed.fastq tagged.fastq untagged.fastq
-          # result files: tagged.fastq (as an example) and untagged.fastq
+         # result files: tagged.fastq (as an example) and untagged.fastq
         
 ## 4. Minimap2 to align the reads to reference sequence   
    Run Minimap2 for analyzing the Nanopore direct RNA sequencing data by typing in the command:
         
        $ ./minimap2 -ax splice -uf -k14 reference.fa tagged.fastq > tagged.sam
-          # reference file like mm10.fa, result file is tagged.sam
+        # reference file like mm10.fa, result file is tagged.sam
 
 ## 5. Use featureCounts to count the aligned reads to genes
    Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
@@ -181,7 +181,7 @@
    Run the command below:  
         
        $ featureCounts -L -a annotation_file -o both tagged.sam untagged.sam
-          # annotation file like gencode.vM23.annotation.gtf, result files are both and both.summary
+        # annotation file like gencode.vM23.annotation.gtf, result files are both and both.summary
 
 ## 6. Samtools to translate the sam file to bam file and index file  
    Run Samtools by typing in (one by one):
@@ -189,7 +189,7 @@
        $ samtools view -bS tagged.sam > tagged.bam 
        $ samtools sort -O BAM -o tagged_sort.bam tagged.bam
        $ samtools index tagged_sort.bam
-          # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
+        # result files: tagged.bam, tagged_sort.bam, tagged_sort.bam.bai
 
 ## 7. IGV to visualize the RNA structure  
    Import the bam and bam.bai to IGV by:   
