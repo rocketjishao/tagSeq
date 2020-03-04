@@ -130,7 +130,7 @@
        
 |Step|sofware|input_files|output_files|
 |---|---|---|---|
-|1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) ([(web browser)](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html)) |    
+|1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) [(raw data)](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html) |    
 |2| Windows OS CMS | file_\*.fastq ([1](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_1.fastq) [2](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_2.fastq) [3](https://github.com/rocketjishao/NAD-tagSeq/blob/master/file_3.fastq))| [mixed.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq)|  
 |3| main.py | mixed.fastq | [tagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/mix.fastq); [untagged.fastq](https://github.com/rocketjishao/NAD-tagSeq/blob/master/untagged.fastq) |   
 |4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas) or [mouse mm10.fa](https://hgdownload-test.gi.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz)); tagged.fastq; untagged.fastq  | tagged.sam; untagged.sam |   
