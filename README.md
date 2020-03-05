@@ -1,5 +1,6 @@
 # Note  
 ### This is used for data analysis of NAD tagSeq protocol, the demo files are mainly for mouse   
+[![DOI](https://zenodo.org/badge/240644522.svg)](https://zenodo.org/badge/latestdoi/240644522)
 
 # Table of content
 - [Table of content](#table-of-content)
