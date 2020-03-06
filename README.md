@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/240644522.svg)](https://zenodo.org/badge/latestdoi/240644522)
 # Note  
-### This is used for data analysis of NAD tagSeq protocol, the demo files are mainly for Arabidopsis  
+### The demo files are mainly for Arabidopsis and data analysis of NAD tagSeq protocol   
 
 # Table of content
 - [Table of content](#table-of-content)
