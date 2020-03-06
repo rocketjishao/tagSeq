@@ -191,7 +191,8 @@
        $ samtools sort -O BAM -o ADPRCplus-tagged_sort.bam ADPRCplus-tagged.bam
        $ samtools index ADPRCplus-tagged_sort.bam
           # result files: ADPRCplus-tagged.bam, ADPRCplus-tagged_sort.bam, ADPRCplus-tagged_sort.bam.bai
-
+       $ samtools stats tagged.bam | grep '^SN' | cut -f 2-  
+          # use this to visualize the # mismatches / bases mapped (cigar), which should be smaller than 0.25, indicating dismatched bases account for <20% and matched bases >80%
 ## 7. IGV to visualize the RNA structure  
    Import the bam and bam.bai to IGV by:   
           File > Load from File > Select the ADPRCplus-tagged_sort.bam file
