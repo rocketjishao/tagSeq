@@ -136,7 +136,7 @@
 |Step|sofware|input_files|output_files|
 |---|---|---|---|
 |1| pycoQC | [sequencing_summary.txt](https://github.com/rocketjishao/NAD-tagSeq/blob/master/Rapiflex-PC_20191225_182450_FAL15529_minion_sequencing_run_1_sequencing_summary.tar.xz) | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) ([raw data](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html)) |    
-|2| Windows OS CMS | file_\*.fastq ([ADPRCplus-1](),[ADPRCplus-2](),[ADPRCplus-3](); [ADPRCminus-1](),[ADPRCminus-2](),[ADPRCminus-3]())| [ADPRCplus.fastq](), [ADPRCminus.fastq]()|  
+|2| Windows OS CMS | file_\*.fastq ([ADPRCplus_1](),[ADPRCplus_2](),[ADPRCplus_3](); [ADPRCminus_1](),[ADPRCminus_2](),[ADPRCminus_3]())| [ADPRCplus.fastq](), [ADPRCminus.fastq]()|  
 |3| main.py | [ADPRCplus.fastq](); [ADPRCminus.fastq]() | [ADPRCplus-tagged.fastq](); [ADPRCplus-untagged.fastq](); [ADPRCminus-tagged.fastq](); [ADPRCminus-untagged.fastq]() |   
 |4| minimap2 | reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas); [ADPRCplus-tagged.fastq](); [ADPRCplus-untagged.fastq](); [ADPRCminus-tagged.fastq](); [ADPRCminus-untagged.fastq]()  | [ADPRCplus-tagged.sam](); [ADPRCplus-untagged.sam](); [ADPRCminus-tagged.sam](); [ADPRCminus-untagged.sam]() |   
 |5| featureCounts | annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff); [ADPRCplus-tagged.sam](); [ADPRCplus-untagged.sam](); [ADPRCminus-tagged.sam](); [ADPRCminus-untagged.sam]() | [all](); [all.summary]() |  
