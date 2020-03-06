@@ -136,12 +136,12 @@
 |Step|sofware|input_files|output_files|
 |---|---|---|---|
 |1| pycoQC | [sequencing_summary.txt]() | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) ([raw data](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html)) |    
-|2| Windows OS CMS | fastq files ([ADPRCplus_1.fastq](),[ADPRCplus_2.fastq](),[ADPRCplus_3.fastq](); [ADPRCminus_1.fastq](),[ADPRCminus_2.fastq](),[ADPRCminus_3.fastq](); [model NAD-RNA]())| [ADPRCplus.fastq](), [ADPRCminus.fastq]()|  
-|3| main.py | [ADPRCplus.fastq](); [ADPRCminus.fastq]() | [ADPRCplus-tagged.fastq](); [ADPRCplus-untagged.fastq](); [ADPRCminus-tagged.fastq](); [ADPRCminus-untagged.fastq]() |   
-|4| minimap2 | [ADPRCplus-tagged.fastq]();     [ADPRCplus-untagged.fastq]();     [ADPRCminus-tagged.fastq]();     [ADPRCminus-untagged.fastq]();     reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas)) | [ADPRCplus-tagged.sam](); [ADPRCplus-untagged.sam](); [ADPRCminus-tagged.sam](); [ADPRCminus-untagged.sam]() |   
-|5| featureCounts | [ADPRCplus-tagged.sam](); [ADPRCplus-untagged.sam](); [ADPRCminus-tagged.sam](); [ADPRCminus-untagged.sam](); annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff)) | [all](); [all.summary]() |  
-|6| samtools | [ADPRCplus-tagged.sam]() | [ADPRCplus-tagged.bam](); [ADPRCplus-tagged_sort.bam](); [ADPRCplus-tagged_sort.bam.bai]() |   
-|7| IGV | [ADPRCplus-tagged_sort.bam](); [ADPRCplus-tagged_sort.bam.bai](); [ADPRCplus-untagged_sort.bam](); [ADPRCplus-untagged_sort.bam.bai](); genome files (mm10.genome) | IGV figure |  
+|2| Windows OS CMS | fastq files ([+ADPRC_1.fastq](),[+ADPRC_2.fastq](),[+ADPRC_3.fastq](); [-ADPRC_1.fastq](); [model NAD-RNA]())| [ADPRCplus.fastq](), [ADPRCminus.fastq]()|  
+|3| main.py | [+ADPRC.fastq](); [-ADPRC.fastq]() | [+ADPRC-tagged.fastq](); [+ADPRC-untagged.fastq](); [-ADPRC-tagged.fastq](); [-ADPRC-untagged.fastq]() |   
+|4| minimap2 | [+ADPRC-tagged.fastq](); [+ADPRC-untagged.fastq](); [-ADPRC-tagged.fastq](); [-ADPRC-untagged.fastq]();     reference_file ([A. thaliana TAIR10.fas](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas)) | [+ADPRC-tagged.sam](); [+ADPRC-untagged.sam](); [-ADPRC-tagged.sam](); [-ADPRC-untagged.sam]() |   
+|5| featureCounts | [+ADPRC-tagged.sam](); [+ADPRC-untagged.sam](); [-ADPRC-tagged.sam](); [-ADPRC-untagged.sam](); annotation file ([TAIR10](https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff)) | [all](); [all.summary]() |  
+|6| samtools | [+ADPRC-tagged.sam]() | [+ADPRC-tagged.bam](); [+ADPRC-tagged_sort.bam](); [+ADPRC-tagged_sort.bam.bai]() |   
+|7| IGV | [+ADPRC-tagged_sort.bam](); [+ADPRC-tagged_sort.bam.bai](); [+ADPRC-untagged_sort.bam](); [+ADPRC-untagged_sort.bam.bai](); genome files (mm10.genome) | IGV figure |  
 
 
 
