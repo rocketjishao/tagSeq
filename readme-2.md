@@ -34,7 +34,9 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
 ### Modules required to be install in python: os, sys, re, Bio, SeqIO, regex, argparse.
     ($ pip install python, regex)
     ($ sudo apt-get install python-pip  ### or try $ python get-pip.py)
-
+### Virtualenv 
+    
+    $ pip install virtualenv
 ### fastQC v0.11.4  
 (https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
 
