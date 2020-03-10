@@ -65,7 +65,7 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
     $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
-## Other notes
+### Other softwares
 Some R packages, like "ggplot", "gplots", "corrplot" are also required, but they will be automatically installed if using our pipeline. No further installation is needed. You only need to format the input files and directory acording to the requirement, and run two scripts on these files.
 
 
