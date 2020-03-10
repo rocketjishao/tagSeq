@@ -30,8 +30,8 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # or try $ python get-pip.py  
 ### R > 3.2.1
 ### Modules required to be install in python: os, sys, re, Bio, SeqIO, regex, argparse.
-    ($ pip install python, regex)
-    ($ sudo apt-get install python-pip  ### or try $ python get-pip.py)
+    $ pip install python, regex
+    $ sudo apt-get install python-pip  ### or try $ python get-pip.py
 ### Virtualenv 
     
     $ pip install virtualenv
@@ -42,7 +42,7 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
 
 ### curl
     
-    $ pip install curl
+    $ sudo apt-get install curl
 
 ### Minimap2.12 
 (https://github.com/lh3/minimap2) :    
