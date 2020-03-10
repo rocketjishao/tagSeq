@@ -25,13 +25,19 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
 python 2.7 and R > 3.2.1 are suggested. 
 
 Modules required to be install in python: os, sys, re, Bio, SeqIO, regex, argparse.
-(##pip install os, sys, re, Biopython, regex, argparse)
+    ($ pip install python, regex)
+    ($ sudo apt-get install python-pip  ### or try $ python get-pip.py)
 
 FastQC> v0.11.4 (https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
+($ sudo apt-get install fastqc)
 
 samtools> 1.7 (http://www.htslib.org/download/)
 
+curl ($ pip install curl
+
 minimap2>2.12 (https://github.com/lh3/minimap2)
+(curl -L https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 | tar -jxvf -)
+(export path=$path /home/rocketjishao/minimap2/minimap2)
 
 
 Some R packages, like "ggplot", "gplots", "corrplot" are also required, but they will be automatically installed if using our pipeline.
@@ -76,6 +82,7 @@ No further installation is needed. You only need to format the input files and d
     
 ### a) Quality control.
 
+$ fastqc demo.fastq
 
 __fastqc.html:__ FastQC results, including quality scores across all bases, GC content per base, sequence duplication levels and so on.
    
