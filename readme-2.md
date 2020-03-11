@@ -28,7 +28,7 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # Then type in password
     $ sudo apt-get install python-pip 
           # or try $ python get-pip.py  
-### curl
+### curl 7.58.0-2Ubuntu3.8
     
     $ sudo apt-get install curl
 
