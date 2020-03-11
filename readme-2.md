@@ -79,7 +79,7 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
           Genome > Load Genome from Server > Select the genome file  
 
 ### TagSeek and TagSeqQuant, two python scripts  
-   # To be provided in GitHub
+     # To be provided in GitHub
 ### Other softwares
 Some R packages, like "ggplot", "gplots", "corrplot" are also required, but they will be automatically installed if using our pipeline. No further installation is needed. You only need to format the input files and directory acording to the requirement, and run two scripts on these files.
 
