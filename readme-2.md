@@ -22,7 +22,7 @@ Table of Contents
 We introduce TagSeqTools as a flexible, general pipeline for facilitating the identification and exploration of tagged-RNA (i.e. NAD-capped RNA) using NAD tagSeq data. TagSeqTools can differentiate tagged and untagged reads and conduct quantitative analysis by only two steps. Besides of TagSeek and TagSeqQuant two major modules, the pipeline also includes other advanced modules for detecting isoforms, antisense transcripts, pre-mRNA (un-spliced transcripts), or others. In addition, this package can automatically generate plots and tables for visualization and further analysis for users. Therefore, TagSeqTools provides a convenient and comprehensive workflow for researchers to study data produced by NAD tagSeq or similar method using Nanopore sequencing.
 
 ## <a name="compilation"></a> Prerequisites & Pipeline
-### python2.7
+### python 2.7
     
     $ sudo apt-get install python2
           # Then type in password
@@ -35,12 +35,12 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
 ### R 3.2.1  
     $ sudo apt-get install r-base
 
-### Virtualenv 
+### Virtualenv 20.0.9 
     
     $ pip install virtualenv
 
 ### Required modules after entering virtual environment   
-To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.  
+To be install in python: biopython 1.16.6 (including os, sys, re, Bio, SeqIO, argparse) and regex 2020.2.20.  
     
     $ pip install biopython
     $ pip install regex
@@ -51,7 +51,7 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
     $ curl -L https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 | tar -jxvf -  
     $ export path=$path /home/rocketjishao/minimap2/minimap2 ### To add minimap2 to a system variant 
 
-### fastQC v0.11.4  
+### fastQC 0.11.4  
 (https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
 
     $ sudo apt-get install fastqc
@@ -63,7 +63,7 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
     $ sudo apt-get install -y samtools
         # then type in password
 
-### IGV for Linux OS  
+### IGV 2.7.2 for Linux OS  
    Download the IGV file: https://software.broadinstitute.org/software/igv/download;  
    Unzip the package, rename it as "IGV", and transfer to the home location;  
    Add the IGV path to the PATH, an environment variable;  
