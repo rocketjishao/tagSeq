@@ -28,7 +28,6 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # Then type in password
     $ sudo apt-get install python-pip 
           # or try $ python get-pip.py  
-### R > 3.2.1 (optional)
 
 ### Required modules   
 To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.
