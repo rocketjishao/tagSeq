@@ -30,7 +30,7 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # or try $ python get-pip.py  
 
 ### Required modules   
-To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.
+To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.  
     $ pip install biopython
     $ pip install regex
 
