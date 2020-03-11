@@ -28,10 +28,12 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # Then type in password
     $ sudo apt-get install python-pip 
           # or try $ python get-pip.py  
-### R > 3.2.1
-### Modules required to be install in python: os, sys, re, Bio, SeqIO, regex, argparse.
-    $ pip install python, regex
-    $ sudo apt-get install python-pip  ### or try $ python get-pip.py
+### R > 3.2.1 (optional)
+
+### Modules required to be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse), and regex.
+    $ pip install biopython
+    $ pip install regex
+
 ### Virtualenv 
     
     $ pip install virtualenv
@@ -58,6 +60,9 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
         # then type in password
 
 ### IGV for Linux OS  
+     
+     $ sudo apt-get install igv
+   ///other methods
    Download the IGV file: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip;  
    Unzip the package;  
    In the terminal window, start IGV by the command line:
