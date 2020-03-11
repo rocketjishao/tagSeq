@@ -28,11 +28,9 @@ We introduce TagSeqTools as a flexible, general pipeline for facilitating the id
           # Then type in password
     $ sudo apt-get install python-pip 
           # or try $ python get-pip.py  
-
-### Required modules   
-To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.  
-    $ pip install biopython
-    $ pip install regex
+### curl
+    
+    $ sudo apt-get install curl
 
 ### R 3.2.1  
     $ sudo apt-get install r-base
@@ -40,21 +38,24 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
 ### Virtualenv 
     
     $ pip install virtualenv
+
+### Required modules after entering virtual environment   
+To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse) and regex.  
+    
+    $ pip install biopython
+    $ pip install regex
+
+### Minimap2.12,after enterinng virtual environment 
+(https://github.com/lh3/minimap2) :    
+    
+    $ curl -L https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 | tar -jxvf -  
+    $ export path=$path /home/rocketjishao/minimap2/minimap2 ### To add minimap2 to a system variant 
+
 ### fastQC v0.11.4  
 (https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)
 
     $ sudo apt-get install fastqc
 
-### curl
-    
-    $ sudo apt-get install curl
-
-### Minimap2.12 
-(https://github.com/lh3/minimap2) :    
-    
-    $ curl -L https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 | tar -jxvf -  
-    $ export path=$path /home/rocketjishao/minimap2/minimap2 ### To add minimap2 to a system variant 
-  
 ### Samtools 1.7
 (https://gist.github.com/adefelicibus/f6fd06df1b4bb104ceeaccdd7325b856)  
 (http://www.htslib.org/download/)
@@ -65,13 +66,15 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
 ### IGV for Linux OS  
    Download the IGV file: https://software.broadinstitute.org/software/igv/download;  
    Unzip the package, rename it as "IGV", and transfer to the home location;  
+   Add the IGV path to the PATH, an environment variable;  
+       
+       $ export PATH=$PATH:/home/user_name/IGV
    In the terminal window, start IGV by the command line:
 
-    $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
+      $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
    Or  
                        
-    $ export PATH=$PATH:/home/user_name/IGV
-    $ igv.sh
+      $ igv.sh
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
 
