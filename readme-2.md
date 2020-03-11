@@ -61,14 +61,15 @@ To be install in python: biopython (including os, sys, re, Bio, SeqIO, argparse)
         # then type in password
 
 ### IGV for Linux OS  
-     
-     $ sudo apt-get install igv
-   ///other methods
-   Download the IGV file: https://data.broadinstitute.org/igv/projects/downloads/2.8/IGV_Linux_2.8.0.zip;  
-   Unzip the package;  
+   Download the IGV file: https://software.broadinstitute.org/software/igv/download;  
+   Unzip the package, rename it as "IGV", and transfer to the home location;  
    In the terminal window, start IGV by the command line:
 
     $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
+   Or  
+                       
+    $ export PATH=$PATH:/home/user_name/IGV
+    $ igv.sh
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
 ### Other softwares
