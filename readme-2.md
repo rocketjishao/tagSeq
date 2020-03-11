@@ -71,15 +71,15 @@ To be install in python: biopython 1.16.6 (including os, sys, re, Bio, SeqIO, ar
        $ export PATH=$PATH:/home/user_name/IGV
    In the terminal window, start IGV by the command line:
 
-      $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
+       $ igv.sh
    Or  
                        
-      $ igv.sh
+       $ java --module-path=lib -Xmx4g @igv.args --module=org.igv/org.broad.igv.ui.Main
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
 
 ### TagSeek and TagSeqQuant, two python scripts  
-     # To be provided in GitHub
+     # To be downloaded GitHub
 ### Other softwares
 Some R packages, like "ggplot", "gplots", "corrplot" are also required, but they will be automatically installed if using our pipeline. No further installation is needed. You only need to format the input files and directory acording to the requirement, and run two scripts on these files.
 
