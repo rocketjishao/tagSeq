@@ -18,7 +18,7 @@
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
   * [2. Combine fastq files to one fastq file](#2-combine-fastq-files-to-one-fastq-file)
-  * [3. Sort out the RNA with and without tag in the first 40 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-40-nt)
+  * [3. Sort out the RNA with and without tag in the first 50 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-50-nt)
   * [4. Minimap2 to align the reads to reference sequence](#4-minimap2-to-align-the-reads-to-reference-sequence)
   * [5. Use featureCounts to count the aligned reads to genes](#5-use-featurecounts-to-count-the-aligned-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
