@@ -1,5 +1,6 @@
 [![DOI](https://zenodo.org/badge/240644522.svg)](https://zenodo.org/badge/latestdoi/240644522)
 # Note  
+### This is mainly used for data processing of CoA tagSeq and NAD tagSeq data generated from Nanopore direct RNA sequencing.
 ### The demo files are mainly for Arabidopsis and data analysis of NAD tagSeq protocol   
 
 # Table of content
