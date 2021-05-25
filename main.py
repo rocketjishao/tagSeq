@@ -7,7 +7,7 @@ def fun(argv):
     tagged_file = argv[1]
     untagged_file = argv[2]
     print 'input file:   %s' % (input_file)
-    print 'search range: fist 40nt'
+    print 'search range: fist 50nt'
     print 'subsequence:  GAACCUGAACCU(12nt)' 
     print 'tagged file:  %s' % (tagged_file)
     print 'untagged file:%s' % (untagged_file)
@@ -23,7 +23,7 @@ def fun(argv):
     untagged_count = 0
     with open(tagged_file, 'w') as f, open (untagged_file, 'w') as g:
         for record in records:
-            sequence = record[1][:40]
+            sequence = record[1][:50]
             if sequence.find('GAACCUGAACCU') < 0 and sequence.find('AACCUGAACCUG') < 0 and sequence.find('ACCUGAACCUGA') < 0 and sequence.find('CCUGAACCUGAA') < 0 and sequence.find('CUGAACCUGAAC') < 0 and sequence.find('UGAACCUGAACC') < 0:
             	untagged_count = untagged_count + 1
 		# print untagged sequence
