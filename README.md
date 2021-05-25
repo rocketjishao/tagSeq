@@ -162,7 +162,7 @@
     
        $ cat ADPRC+_*.fastq > ADPRC+.fastq
 
-## 3. Sort out the RNA with and without tag in the first 40 nt
+## 3. Sort out the RNA with and without tag in the first 50 nt
    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway of main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
