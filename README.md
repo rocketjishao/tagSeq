@@ -8,13 +8,13 @@
 - [Software installation and initiation](#software-installation-and-initiation)
   * [python2.7 and python3.6](#python27-and-python36)
   * [Miniconda3](#miniconda3)
-  * [ont_fast5_api:](#ont-fast5-api-)
-  * [ont-tombo:](#ont-tombo-)
   * [pycoQC](#pycoqc)
   * [Minimap2](#minimap2)
   * [featureCounts](#featurecounts)
   * [Samtools](#samtools)
   * [IGV for Linux OS](#igv-for-linux-os)
+  * [ont_fast5_api:](#ont-fast5-api-)
+  * [ont-tombo:](#ont-tombo-)
 - [Demo files](#demo-files)
 - [NAD-tagSeq data analysis procedure](#nad-tagseq-data-analysis-procedure)
   * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
@@ -76,29 +76,6 @@
              
     $ conda config --show | grep auto_activate_base
 
-## ont_fast5_api:
-(https://github.com/nanoporetech/ont_fast5_api):  
-   
-    $ pip install ont-fast5-api
-
-
-## ont-tombo:
-(https://github.com/nanoporetech/tombo)
-   Note: To install ont-tombo, conda is required and a virtual environment is recommened. 
-   a. In your terminal window, run anaconda3:
-
-    $ source ~/anaconda3/etc/profile.d/conda.sh
-               $ conda activate 
-               ## deactivate conda: $ conda deactivate
-   b. Create a virtual environment called Python2 where python version is 2
-    
-    $ conda create --name python2 python=2
-    $ source activate python2
-
-   c. Tombo install:
-
-    $ conda install -c bioconda ont-tombo
-
 
 ## pycoQC   
 (https://a-slide.github.io/pycoQC/installation/)  
@@ -159,6 +136,28 @@
    Download genome file from IGV for A. thaliana, human, mouse, or E.coli:   
           Genome > Load Genome from Server > Select the genome file  
 
+## ont_fast5_api:
+(https://github.com/nanoporetech/ont_fast5_api):  
+   
+    $ pip install ont-fast5-api
+
+
+## ont-tombo:
+(https://github.com/nanoporetech/tombo)
+   Note: To install ont-tombo, conda is required and a virtual environment is recommened. 
+   a. In your terminal window, run anaconda3:
+
+    $ source ~/anaconda3/etc/profile.d/conda.sh
+               $ conda activate 
+               ## deactivate conda: $ conda deactivate
+   b. Create a virtual environment called Python2 where python version is 2
+    
+    $ conda create --name python2 python=2
+    $ source activate python2
+
+   c. Tombo install:
+
+    $ conda install -c bioconda ont-tombo
 
 # Demo files			
        
