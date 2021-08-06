@@ -180,7 +180,7 @@
   
     $ multi_to_single_fast5 --input_path ~/ont_fast5_api/multi_reads --save_path ~/ont_fast5_api/single_readsc
 
-   c. Transfer the fast5 files to another folder, like "~/C44/fast5". repeat steps a-c to find out more fast5 files for tagged model CoA-RNA.
+   c. Transfer the fast5 files to another folder, like "'~/C44/fast5". repeat steps a-c to find out more fast5 files for tagged model CoA-RNA.
    d. Then run the command below, to requiggle electronic signal to according the sequence "~/minimap2-/model.fa":
      
      # tombo resquiggle ~/C44/fast5 ~/minimap2-/model.fa --processes 4 --num-most-common-errors 5
