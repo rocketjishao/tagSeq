@@ -173,7 +173,7 @@
 
 # NAD-tagSeq data analysis procedure
 ## 0. Electronic signal analysis
-   a. To analyze the electronic signal of tagged CoA-RNA, firstly you need to get the fast5 file and figure out in which fast5 file the tagged CoA-RNA was located. In IGV, get the ID of the tagged model CoA-RNA (here it is "18cf1707****"), then sort out the tagged reads and copy their information (first two lines) to a text file by using grep, therefore you can see which fast5 file the tagged model CoA-RNA was in:  
+   a. To analyze the electronic signal of tagged CoA-RNA, firstly you need to get the fast5 file and figure out in which fast5 file the tagged CoA-RNA was located. In IGV, get the ID of the tagged model CoA-RNA (here it is "18cf1707...."), then sort out the tagged reads and copy their information (first two lines) to a text file by using grep, therefore you can see which fast5 file the tagged model CoA-RNA was in:  
         
     $ grep "18cf1707" ~/C44pos/44pos.tag.fastq -A 2 > tag1.txt
    b. Copy the fast5 file to the folder of "ont_fast5_api". Because a fast5 file contains 4000 reads, firstly separate multiple fast5 reads into single reads:
