@@ -72,6 +72,30 @@
              
     $ conda config --show | grep auto_activate_base
 
+## ont_fast5_api:
+(https://github.com/nanoporetech/ont_fast5_api):  
+   
+    $ pip install ont-fast5-api
+
+
+## ont-tombo:
+(https://github.com/nanoporetech/tombo)
+   Note: To install ont-tombo, conda is required and a virtual environment is recommened. 
+   a. In your terminal window, run anaconda3:
+
+    $ source ~/anaconda3/etc/profile.d/conda.sh
+               $ conda activate 
+               ## deactivate conda: $ conda deactivate
+   b. Create a virtual environment called Python2 where python version is 2
+    
+    $ conda create --name python2 python=2
+    $ source activate python2
+
+   c. Tombo install:
+
+    $ conda install -c bioconda ont-tombo
+
+
 ## pycoQC   
 (https://a-slide.github.io/pycoQC/installation/)  
    a. Create a clean virtual environment (only needed for the 1st run):  
@@ -148,6 +172,25 @@
 
 
 # NAD-tagSeq data analysis procedure
+## 0. Electronic signal analysis
+   a. To analyze the electronic signal of tagged CoA-RNA, firstly you need to get the fast5 file and figure out in which fast5 file the tagged CoA-RNA was located. In IGV, get the ID of the tagged model CoA-RNA (here it is "18cf1707****"), then sort out the tagged reads and copy their information (first two lines) to a text file by using grep, therefore you can see which fast5 file the tagged model CoA-RNA was in:  
+        
+    $ grep "18cf1707" ~/C44pos/44pos.tag.fastq -A 2 > tag1.txt
+   b. Copy the fast5 file to the folder of "ont_fast5_api". Because a fast5 file contains 4000 reads, firstly separate multiple fast5 reads into single reads:
+  
+    $ multi_to_single_fast5 --input_path ~/ont_fast5_api/multi_reads --save_path ~/ont_fast5_api/single_readsc
+
+   c. Transfer the fast5 files to another folder, like "~/C44/fast5". repeat steps a-c to find out more fast5 files for tagged model CoA-RNA.
+   d. Then run the command below, to requiggle electronic signal to according the sequence "~/minimap2-/model.fa":
+     
+     # tombo resquiggle ~/C44/fast5 ~/minimap2-/model.fa --processes 4 --num-most-common-errors 5
+
+   e. Use the following commands to analyze the resultant mapping of electronic signals to tagged model CoA-RNA sequence:
+    
+     # tombo detect_modifications de_novo --fast5-basedirs /C44/fast5 --statistics-file-basename de_novo_testing --processes 4
+
+     # tombo plot genome_locations --fast5-basedirs ~/C44/fast5 --genome-locations model:50 --num-bases 100
+
 
 ## 1. Run pycoQC in MiniConda3 active virtual environment
    To visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
