@@ -5,7 +5,7 @@
 
 # Table of content
 - [Softwares and code](#softwares-and-code)
-- [Software installation and initiation](#software-installation-and-initiation)
+- [Software installation and configuration](#software-installation-and-configuration)
   * [python2.7 and python3.6](#python27-and-python36)
   * [Miniconda3](#miniconda3)
   * [pycoQC](#pycoqc)
@@ -42,7 +42,7 @@
 (9) Samtools 1.7 (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
 (10) Integrative Genomics Viewer 2.7.2 (https://software.broadinstitute.org/software/igv/) to visualize the RNA structures;  
   
-# Software installation and initiation
+# Software installation and configuration
 ## python2.7 and python3.6
     
     $ sudo apt-get install python2
