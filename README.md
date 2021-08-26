@@ -36,7 +36,7 @@
 (3) Python 2.7 and 3.7 (http://www.python.org/downloads/)  
 (4) Miniconda3 (Miniconda3-latest-Linux-x86_64.sh)(https://dos.conda.io/projects/conda/en/latest/user-guide/install/linux.html) for pycoQC uses;             
 (5) PycoQC (https://github.com/a-slide/pycoQC) to analyze the basecalling results and data quality;  
-(6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py)  
+(6) Homemade python script to sort out tagged and untagged RNA  (https://github.com/rocketjishao/tagSeq/blob/master/main.py)  
 (7) Minimap2 (https://github.com/lh3/minimap2) to align the sequenced RNA to genome or transcriptome databases for interpretation of the RNA identities;  
 (8) featureCounts 1.6.0 (http://bioinf.wehi.edu.au/featureCounts/) to map and count the reads of tagged RNA to genes in different samples.  
 (9) Samtools 1.7 (http://samtools.sourceforge.net/) to translate the sam file to bam file and obtain its bam.bai file;  
