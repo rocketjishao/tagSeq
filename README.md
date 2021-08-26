@@ -78,7 +78,7 @@
 
 
 ## pycoQC   
-(https://a-slide.github.io/pycoQC/installation/)  
+(https://github.com/tleonardi/pycoQC)  
    a. Create a clean virtual environment (only needed for the 1st run):  
 
     $ conda create -n pycoQC python=3.6
