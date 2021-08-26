@@ -24,7 +24,7 @@
   * [5. Use featureCounts to count the aligned reads to genes](#5-use-featurecounts-to-count-the-aligned-reads-to-genes)
   * [6. Samtools to translate the sam file to bam file and obtain its bam.bai file](#6-samtools-to-translate-the-sam-file-to-bam-file-and-obtain-its-bambai-file)
   * [7. IGV to visualize the RNA structure](#7-igv-to-visualize-the-rna-structure)
-  * [8. Electronic signal analysis for model CoA-RNA](#8-electronic-signal-analysis-for-model-coa-rna)
+  * [8. Electronic signal analysis for tagged model CoA-RNA](#8-electronic-signal-analysis-for-tagged-model-coa-rna)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -225,7 +225,7 @@
    Import the bam and bam.bai to IGV by:   
           File > Load from File > Select the ADPRC+_tagged_sort.bam file
   
-## 8. Electronic signal analysis for model CoA-RNA
+## 8. Electronic signal analysis for tagged model CoA-RNA
    a. To analyze the electronic signal of tagged CoA-RNA, firstly you need to get the fast5 file and figure out in which fast5 file the tagged CoA-RNA was located. In IGV, get the ID of the tagged model CoA-RNA (here it is "18cf1707...."), then sort out the tagged reads and copy their information (first two lines) to a text file by using grep, therefore you can see which fast5 file the tagged model CoA-RNA was in:  
         
     $ grep "18cf1707" ~/C44pos/44pos.tag.fastq -A 2 > tag1.txt
