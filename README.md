@@ -205,7 +205,10 @@
         
 ## 4. Minimap2 to align the reads to reference sequence   
    Run Minimap2 for analyzing the Nanopore direct RNA sequencing data by typing in the command:
-        
+        Note: GNU make (C compiler) and zlib are needed.
+        ## zlib: sudo apt-get install zlib1g-dev
+        ## GNU make: $ sudo apt install build-essential 
+              check gcc version $ gcc --version
        $ ./minimap2 -ax splice -uf -k14 reference.fa ADPRC+_tagged.fastq > ADPRC+_tagged.sam
           # reference file like TAIR10.fa, result file is ADPRC+_tagged.sam
 
