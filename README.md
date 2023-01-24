@@ -76,8 +76,10 @@
              
     $ conda config --show | grep auto_activate_base
      
-     Note: for activating miniconda3, type in
-     source ~/miniconda3/bin/activate
+ Note: for activating miniconda3, type in
+    $ source ~/miniconda3/bin/activate
+     for inactivation, 
+    $ source ~/.bashrc
 
 
 ## pycoQC   
