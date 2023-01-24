@@ -75,6 +75,9 @@
    i. To change the automatic conda activation because *auto_activate_base* is set to True. You can check this using the following command
              
     $ conda config --show | grep auto_activate_base
+     
+     Note: for activating miniconda3, type in
+     source ~/miniconda3/bin/activate
 
 
 ## pycoQC   
