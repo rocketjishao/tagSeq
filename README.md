@@ -181,8 +181,9 @@
 
 
 # tagSeq data analysis procedure
-## 0.  Run tagSeq.py python code to process .fastq files
+## 0. Run tagSeq.py python code to process .fastq files
   Use the following command form (tagSeq.py) to process fileA.fastq by running the following Steps 1-7.
+     
      $ python2 tagseq.py fileA.fastq
 
 ## 1. Run pycoQC in MiniConda3 active virtual environment
