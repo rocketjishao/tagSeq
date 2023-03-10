@@ -169,6 +169,7 @@
        
 |Step|sofware|input_files|output_files| demo files |
 |---|---|---|---| ---|
+|0| tagseq.py | [fileA.fastq]() | [fileA.tag.fastq, fileA.untag.fastq, fileA.tag.model.sam, fileA.tag.mouse.sam, fileA.untag.model.sam, fileA.untag.mouse.sam, etc]()) | fileA.fastq |   
 |1| pycoQC | [sequencing_summary.txt]() | [pycoQC.html](https://rawcdn.githack.com/rocketjishao/NAD-tagSeq/37433efcfd6add36e27a77e0124571326b6ec05d/pycoQC.html) ([raw data](https://github.com/rocketjishao/NAD-tagSeq/blob/master/pycoQC.html)) | no |   
 |2| Windows OS CMS | fastq files (ADPRC+_1.fastq,ADPRC+_2.fastq,ADPRC+_3.fastq; ADPRC-.fastq| ADPRC+.fastq, ADPRC-.fastq| [demo](https://github.com/rocketjishao/NAD-tagSeq/blob/Arabidopsis-only/Demo-total%20RNA_raw%20data.tar.xz)|  
 |3| main.py | ADPRC+.fastq; ADPRC-.fastq | ADPRC+_tagged.fastq; ADPRC+_untagged.fastq; ADPRC-_tagged.fastq; ADPRC-_untagged.fastq |[deomo](https://github.com/rocketjishao/NAD-tagSeq/blob/Arabidopsis-only/Demo-tag_sorted.tar.xz)|   
@@ -205,7 +206,7 @@
    Change directory to the file pathway of main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
         
-       $ python main.py ADPRC+.fastq ADPRC+_tagged.fastq ADPRC+_untagged.fastq
+       $ python2 main.py ADPRC+.fastq ADPRC+_tagged.fastq ADPRC+_untagged.fastq
           # result files: ADPRC+_tagged.fastq and ADPRC+_untagged.fastq
         
 ## 4. Minimap2 to align the reads to reference sequence   
