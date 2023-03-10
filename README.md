@@ -188,13 +188,13 @@
      
      $ python2 tagseq.py fileA.fastq
 
-  ### 1.1. Run pycoQC in MiniConda3 active virtual environment
+  ###   1.1. Run pycoQC in MiniConda3 active virtual environment
    To visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
    Type in the command below. Open the html file with web browser to visualize the results.   
      
      $ pycoQC –f sequencing_summary.txt –o pycoQC.html
 
-  ### 1.2. Combine fastq files to one fastq file  
+  ###   1.2. Combine fastq files to one fastq file  
    In Windows OS CMD:  
        
        $ copy ADPRC+_*.fastq ADPRC+.fastq
@@ -202,7 +202,7 @@
     
        $ cat ADPRC+_*.fastq > ADPRC+.fastq
 
-  ### 1.3. Sort out the RNA with and without tag in the first 50 nt
+  ###   1.3. Sort out the RNA with and without tag in the first 50 nt
    Download main.py from our Git-Hub repository: https://github.com/rocketjishao/NAD-tagSeq/blob/master/main.py  
    Change directory to the file pathway of main.py; 
    Sort out the RNAs with and without tag RNA sequence by typing in:
@@ -210,7 +210,7 @@
        $ python2 main.py ADPRC+.fastq ADPRC+_tagged.fastq ADPRC+_untagged.fastq
           # result files: ADPRC+_tagged.fastq and ADPRC+_untagged.fastq
         
-  ### 1.4. Minimap2 to align the reads to reference sequence   
+  ###   1.4. Minimap2 to align the reads to reference sequence   
    Run Minimap2 for analyzing the Nanopore direct RNA sequencing data by typing in the command:
         Note: GNU make (C compiler) and zlib are needed.
         ## zlib: sudo apt-get install zlib1g-dev
@@ -219,7 +219,7 @@
        $ ./minimap2 -ax splice -uf -k14 reference.fa ADPRC+_tagged.fastq > ADPRC+_tagged.sam
           # reference file like TAIR10.fa, result file is ADPRC+_tagged.sam
 
-  ### 1.5. Use featureCounts to count the aligned reads to genes
+  ###   1.5. Use featureCounts to count the aligned reads to genes
    Use simultaneously the tagged and untagged counterparts (or map each gene to the tagged RNA in ADPRC- and ADPRC+ samples.)  
    And download gene annotation files in gtf format from Ensembl or GenBank (https://www.ncbi.nlm.nih.gov/genbank/), avoid UCSC  
    Run the command below:  
@@ -227,7 +227,7 @@
        $ featureCounts -L -a annotation -o all ADPRC+_tagged.sam ADPRC+_untagged.sam ADPRC-_tagged.sam ADPRC-_untagged.sam
           # annotation file like TAIR10.gff, result files are all and all.summary
 
-  ### 1.6. Samtools to translate the sam file to bam file and obtain its bam.bai file  
+  ###   1.6. Samtools to translate the sam file to bam file and obtain its bam.bai file  
    Run Samtools by typing in (one by one):
     
        $ samtools view -bS ADPRC+_tagged.sam > ADPRC+_tagged.bam 
@@ -236,7 +236,7 @@
           # result files: ADPRC+_tagged.bam, ADPRC+_tagged_sort.bam, ADPRC+_tagged_sort.bam.bai
        $ samtools stats ADPRC+_tagged.bam | grep '^SN' | cut -f 2-  
           # use this to visualize the # mismatches / bases mapped (cigar), which should be smaller than 0.25, indicating dismatched bases account for <20% and matched bases >80%
-  ### 1.7. IGV to visualize the RNA structure  
+  ###   1.7. IGV to visualize the RNA structure  
    Import the bam and bam.bai to IGV by:   
           File > Load from File > Select the ADPRC+_tagged_sort.bam file
   
