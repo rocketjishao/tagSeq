@@ -17,6 +17,7 @@
   * [ont-tombo:](#ont-tombo-)
 - [Demo files](#demo-files)
 - [tagSeq data analysis procedure](#tagseq-data-analysis-procedure)
+  * [0. Run tagSeq.py python code to process .fastq files](#0-run-tagseq-py-python-code-toprocess-fastq-files)
   * [1. Run pycoQC in MiniConda3 active virtual environment](#1-run-pycoqc-in-miniconda3-active-virtual-environment)
   * [2. Combine fastq files to one fastq file](#2-combine-fastq-files-to-one-fastq-file)
   * [3. Sort out the RNA with and without tag in the first 50 nt](#3-sort-out-the-rna-with-and-without-tag-in-the-first-50-nt)
@@ -180,6 +181,9 @@
 
 
 # tagSeq data analysis procedure
+## 0.  Run tagSeq.py python code to process .fastq files
+  Use the following command form (tagSeq.py) to process fileA.fastq by running the following Steps 1-7.
+     $ python2 tagseq.py fileA.fastq
 
 ## 1. Run pycoQC in MiniConda3 active virtual environment
    To visualize the summary file generated from the sequencing and do the quality control analysis of the basecalling results:  
