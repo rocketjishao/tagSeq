@@ -3,7 +3,7 @@ import sys
 
 # notify user
 print("Please install minimap2 and python2, and download main.py code, along with genome files (model.fa & mm10.fa)")
-print("Please include genome annotation files (lnc.gtf, mouse2.gtf, model.g")
+print("Please include genome annotation files (lnc.gtf, mouse2.gtf, model.gtf")
 
 # check if the correct number of arguments is passed
 if len(sys.argv) != 2:
